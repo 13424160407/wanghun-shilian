@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>音频测试</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 30px; background: #1a1a2e; color: #fff; }
+h1 { color: #00d4ff; }
+.test-btn { background: #00d4ff; color: #000; border: none; padding: 15px 30px; font-size: 16px; border-radius: 5px; cursor: pointer; margin: 10px 5px; }
+.test-btn:hover { background: #00a8cc; }
+#status { margin: 20px 0; padding: 15px; background: #16213e; border-radius: 5px; min-height: 200px; }
+.pass { color: #4caf50; }
+.fail { color: #f44336; }
+.info { color: #ffeb3b; }
+</style>
+</head>
+<body>
+<h1>🎮 音频系统测试</h1>
+
+<button class="test-btn" onclick="testBGM()">🎵 测试背景音乐</button>
+<button class="test-btn" onclick="testAttack()">⚔️ 测试攻击音效</button>
+<button class="test-btn" onclick="testCollect()">💰 测试收集音效</button>
+<button class="test-btn" onclick="runAllTests()">🚀 运行全部测试</button>
+
+<div id="status">
+<h3>测试状态：</h3>
+<div id="results"></div>
+</div>
+
+<script>
+let bgmAudio, attackAudio, collectAudio;
+
+function log(msg, type = 'info') {
+    const results = document.getElementById('results');
+    const span = document.createElement('span');
+    span.className = type;
+    span.textContent = msg + '\n';
+    results.appendChild(span);
+    console.log(msg);
+}
+
+function initAudio() {
+    log('🔊 初始化音频系统...');
+    
+    bgmAudio = new Audio('sounds/bgm.mp3');
+    bgmAudio.loop = true;
+    bgmAudio.volume = 0.7;
+    
+    attackAudio = new Audio('sounds/attack.mp3');
+    attackAudio.volume = 0.8;
+    
+    collectAudio = new Audio('sounds/collect.mp3');
+    collectAudio.volume = 0.8;
+    
+    // 监听加载事件
+    bgmAudio.addEventListener('canplay', () => log('✅ BGM可以播放', 'pass'));
+    bgmAudio.addEventListener('error', (e) => log('❌ BGM加载失败: ' + e.message, 'fail'));
+    
+    attackAudio.addEventListener('canplay', () => log('✅ 攻击音效可以播放', 'pass'));
+    attackAudio.addEventListener('error', (e) => log('❌ 攻击音效加载失败: ' + e.message, 'fail'));
+    
+    collectAudio.addEventListener('canplay', () => log('✅ 收集音效可以播放', 'pass'));
+    collectAudio.addEventListener('error', (e) => log('❌ 收集音效加载失败: ' + e.message, 'fail'));
+    
+    // 检查文件是否存在
+    log('📁 检查音频文件路径...');
+    log('BGM: sounds/bgm.mp3');
+    log('攻击: sounds/attack.mp3');
+    log('收集: sounds/collect.mp3');
+    
+    // 尝试预加载
+    bgmAudio.load();
+    attackAudio.load();
+    collectAudio.load();
+    
+    log('📤 音频文件已加载（等待响应...）');
+}
+
+function testBGM() {
+    log('\n🎵 测试背景音乐...');
+    if (bgmAudio) {
+        bgmAudio.currentTime = 0;
+        bgmAudio.play().then(() => {
+            log('✅ BGM播放成功！', 'pass');
+        }).catch(e => {
+            log('❌ BGM播放失败: ' + e.message, 'fail');
+        });
+    } else {
+        log('❌ BGM未初始化', 'fail');
+    }
+}
+
+function testAttack() {
+    log('\n⚔️ 测试攻击音效...');
+    if (attackAudio) {
+        attackAudio.currentTime = 0;
+        attackAudio.play().then(() => {
+            log('✅ 攻击音效播放成功！', 'pass');
+        }).catch(e => {
+            log('❌ 攻击音效播放失败: ' + e.message, 'fail');
+        });
+    } else {
+        log('❌ 攻击音效未初始化', 'fail');
+    }
+}
+
+function testCollect() {
+    log('\n💰 测试收集音效...');
+    if (collectAudio) {
+        collectAudio.currentTime = 0;
+        collectAudio.play().then(() => {
+            log('✅ 收集音效播放成功！', 'pass');
+        }).catch(e => {
+            log('❌ 收集音效播放失败: ' + e.message, 'fail');
+        });
+    } else {
+        log('❌ 收集音效未初始化', 'fail');
+    }
+}
+
+function runAllTests() {
+    document.getElementById('results').innerHTML = '';
+    initAudio();
+    setTimeout(() => {
+        testBGM();
+        setTimeout(() => {
+            testAttack();
+            setTimeout(() => {
+                testCollect();
+                log('\n✨ 测试完成！');
+            }, 500);
+        }, 500);
+    }, 1000);
+}
+
+// 页面加载时自动运行测试
+window.onload = function() {
+    runAllTests();
+};
+</script>
+
+<h3>提示：</h3>
+<ul>
+<li>如果看到 "✅ 可以播放"，说明音频文件加载成功</li>
+<li>如果看到 "❌ 加载失败"，说明文件路径有问题</li>
+<li>如果播放失败但加载成功，点击按钮手动播放测试</li>
+<li>需要用户点击页面或按下任意键后才能播放音频（浏览器限制）</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,529 @@
+客户端接入
+
+复制为 Markdown
+介绍​
+TapSDK 提供了一套可供游戏开发者收集账号数据的 API。 系统会收集账号数据并进行分析，最终形成数据报表，帮助游戏开发者分析账号行为并优化游戏。
+
+集成前准备​
+参考 开发者中心配置 创建应用、配置包名与签名证书
+参考集成指南（Unity、Android、iOS）完成对应平台或引擎的基础接入
+环境要求​
+Unity
+Android
+iOS
+Android 5.0（API level 21）或更高版本
+
+权限说明​
+Android
+该模块需要如下权限：
+
+权限	使用目的	权限申请时机
+获取网络状态	用于检测当前网络连接是否有效	用户首次使用该功能时会申请权限
+网络状态权限	用于检查网络连接状态（如 Wi-Fi 或移动数据是否可用）	用户首次使用该功能时会申请权限
+对于可选权限，SDK 不会主动发起申请，只在用户已授权的情况下获取对应数据，需要由开发者决定是否申请。
+
+该模块将在应用中添加如下权限：
+
+ <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+SDK 集成​
+请参考集成指南（Unity、Android、iOS）完成对应平台的 SDK 基础依赖配置
+
+信息
+如果你曾使用 <3.6.3 的 TapSDK 的数据分析功能，且初始化时区域选择为国际（IO），那么升级 SDK 至 >=3.6.3 的 TapSDK 前需要先迁移数据。 请提交工单联系我们迁移数据后再升级。
+
+初始化额外配置​
+在调用业务接口前，开发者需先调用初始化接口完成应用信息的配置，同时可以配置上报事件所携带的游戏包属性及当前设备的信息，具体使用方式如下：
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapRegion;
+import com.taptap.sdk.core.TapTapSdk;
+import com.taptap.sdk.core.TapTapSdkOptions;
+
+/* 必选配置 */
+// 开发者中心对应 Client ID
+String clientId = "";
+// 开发者中心对应 Client Token
+String clientToken = "";
+
+ TapTapEventOptions eventOptions = TapTapEventOptions.builder()
+    .channel("channel") // 分包渠道名称
+    .autoIAPEventEnabled(false) // 是否开启自动上报 IAP 事件
+    .overrideBuiltInParameters(false) // 是否能够覆盖内置参数，默认为 false
+    .properties(new JSONObject()) // 上报到 device_login 事件的自定义参数
+    .disableAutoLogDeviceLogin(false) // 是否禁用自动上报设备登录事件
+    .disableReflectionOAID(true) // 是否禁用 OAID 反射, 默认 true
+    .setOaidCert("cert") // OAID 证书
+    .build();
+
+TapTapSdkOptions tapSdkOptions = new TapTapSdkOptions(
+    "clientId", // 游戏 Client ID
+    "clientToken", // 游戏 Client Token
+    TapTapRegion.CN // 游戏可玩区域: [TapTapRegion.CN]=国内 [TapTapRegion.GLOBAL]=海外
+);
+
+// 初始化 TapSDK
+TapTapSdk.init(context, tapSdkOptions, eventOptions);
+
+相关参数说明如下：
+
+字段	可为空	说明
+channel	是	渠道，如 AppStore、GooglePlay
+propertiesJson	是	上报到 device_login 事件的自定义参数
+overrideBuiltInParameters	是	是否能够覆盖内置参数，默认为 false
+enableAutoIAPEvent	是	是否开启自动上报 IAP 事件，默认为 true
+disableAutoLogDeviceLogin	是	是否禁用自动上报设备登录事件，仅 Android，默认为 false，
+caid	是	CAID，仅国内 iOS
+oaidCert	是	OAID 证书， 仅 Android，用于上报 OAID 仅国内生效
+disableReflectionOAID	是	是否禁用 OAID 反射，仅 Android，默认为 true
+enableAdvertiserIDCollection	是	是否开启广告商 ID （IDFA）收集，仅 iOS ，默认为 false，开启时需添加工程配置
+设置账号​
+设置账号 ID​
+调用该 API 记录一个账号，当账号登录时调用。
+
+调用后会上报一个账号登录（ user_login ）事件，并将这个设备的是否有用户注册过（ has_user ）属性置为 true。
+
+在重启应用或调用清除账号 ID（ clearUser ）前，上报的事件都会带有该账号 ID。
+
+字段	可为空	说明
+userId	否	账号的唯一字符串，字符串长度不大于 160，只能包含数字、大小写字母、下划线（_）、短横（-）、加号（+）、正斜线（/）、等号（=）、英文句号（.）、英文逗号（,）、英文冒号（:）
+开发者需要保证不同账号的 userId 均不相同。
+properties	是	账号登录（ user_login ）的事件属性
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 自定义属性
+    properties.put("key1", "value1");
+    properties.put("key2", "value2");
+} catch (Exception e) {
+    e.printStackTrace();
+}
+// 设置用户 ID 及账号登录事件属性
+TapTapEvent.setUserId("userId", properties);
+
+清除账号 ID​
+当用户进行登出时，可调用 clearUser 清除当前 SDK 中保存的账号 ID，后续上报的事件将不会带有账号 ID，调用该接口不会上报任何事件。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+
+TapTapEvent.clearUser();
+
+上报充值记录​
+提示
+接入 TapPayments 后无需手动上报 TapPayments 的充值数据，防止重复统计；
+
+在用户进行充值后，可调用该接口上报充值信息，调用后将上报 charge 事件，并将传入的参数作为事件的属性。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import com.taptap.sdk.core.TapTapPurchasedEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 自定义属性
+    properties.put("key1", "value1");
+    properties.put("key2", "value2");
+} catch (Exception e) {
+    e.printStackTrace();
+}
+
+TapTapPurchasedEvent purchasedEvent = new TapTapPurchasedEvent(
+        "orderId", // 订单 ID
+        "productName", // 产品名称
+        10000.0, // 充值金额（单位分，即无论什么币种，都需要乘以 100）
+        "CNY", // 货币类型，遵循 ISO 4217 标准。参考：人民币 CNY，美元 USD；欧元 EUR
+        "支付宝", // 支付方式，如：支付宝
+        properties// 充值（ charge ）的事件属性
+);
+
+TapTapEvent.logPurchasedEvent(purchasedEvent);
+
+注意:在条件允许的情况下推荐使用服务端充值统计接口，请参考 服务端接入文档
+
+广告变现收入​
+如需统计广告变现收入，请先在项目后台进入 工具 -> 扩展功能，找到 「变现收入」 并开启该功能。
+
+在广告联盟展示广告时，可上报 #ad_show 事件。本节主要介绍客户端接入；如需通过服务端上报，请参考服务端接入。游戏可任选其中一种方式，避免重复统计。
+
+参数	可为空	说明
+#ad_union_type	是	广告聚合平台，可传入 topon、gromore、admore、other
+#ad_placement_id	是	广告位 ID
+#ad_source_id	是	代码位 ID
+#ad_type	是	广告类型，可传入 reward、banner、native、interstitial、splash
+#ad_network	是	广告变现平台，可传入 dirichlet、csj、gdt、ks、mint、baidu、other，分别代表 Dirichlet、穿山甲、广点通、快手、汇量、百度、其他
+#ecpm	否	预估 eCPM 价格，单位为分
+currency_type	否	货币类型，遵循 ISO 4217 标准，例如 CNY、USD、EUR
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    properties.put("#ad_union_type", "topon");
+    properties.put("#ad_placement_id", "your_ad_placement_id");
+    properties.put("#ad_source_id", "your_ad_source_id");
+    properties.put("#ad_type", "reward");
+    properties.put("#ad_network", "dirichlet");
+    properties.put("#ecpm", 6000);
+    properties.put("currency_type", "CNY");
+} catch (Exception e) {
+    e.printStackTrace();
+}
+
+TapTapEvent.logEvent("#ad_show", properties);
+
+自定义事件​
+上报事件​
+在 SDK 初始化完成后可使用该接口上报事件
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 定义事件属性
+    properties.put("key1", "value1");
+    properties.put("key2", "value2");
+} catch (Exception e) {
+    e.printStackTrace();
+}
+
+TapTapEvent.logEvent("eventName", properties);
+
+注意:
+
+事件名支持上报预置事件和自定义事件，其中自定义事件应以 # 开头
+事件属性的 key 值为属性的名称，支持 NSString 类型
+事件属性的 value 值为属性的名称，支持 NSString（最大长度 256 ）、NSNumber（取值区间为 [-9E15, 9E15] ）类型
+事件属性支持上报预置属性和自定属性，其中自定义属性应以 # 开头
+事件属性传入预置属性时，SDK 默认采集的预置属性将不被覆盖， 这个可以再初始化时候修改配置 overrideBuiltInParameters 控制。
+设置通用事件属性​
+对于一些所有事件都要携带的属性，建议使用通用事件属性实现。
+
+添加静态通用事件属性​
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 通用事件属性
+    properties.put("key1", "value1");
+    properties.put("key2", "value2");
+} catch (Exception e) {
+    e.printStackTrace();
+}
+
+TapTapEvent.addCommon(properties);
+
+删除部分静态通用事件属性​
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+
+String[] keys = new String[]{"key1", "key1"};
+TapTapEvent.clearCommonProperties(keys);
+
+清空全部静态通用属性​
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+
+TapTapEvent.clearAllCommonProperties();
+
+注册动态通用事件属性​
+对于可能随时发生变化的通用事件属性，可以注册动态通用事件属性回调，该回调会在每次调用时被触发，将计算好的属性添加到本次上报事件属性中。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+TapTapEvent.TapEventDynamicProperties dynamicProperties = new TapTapEvent.TapEventDynamicProperties() {
+    @Override
+    public JSONObject getDynamicProperties() {
+        JSONObject properties = new JSONObject();
+        try {
+            // 动态通用事件属性
+            properties.put("key1", "value1");
+            properties.put("key2", "value2");
+            properties.put("currentTimeMillis", System.currentTimeMillis());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return properties;
+    }
+};
+        
+TapTapEvent.registerDynamicProperties(dynamicProperties);
+
+注意:
+
+在上报事件或通用属性中使用相同属性名会出现属性覆盖的现象，属性覆盖的优先级从高到低依次为：事件属性、动态通用事件属性、静态通用事件属性、预置属性（例如 trackEvent 中设置的事件属性将覆盖动态通用事件属性、静态通用事件属性、预置属性中的同名属性）
+
+修改用户属性​
+TapDB 支持两种用户主体：设备和账号，你可以通过如下接口对这两种用户的属性进行操作。
+
+修改设备属性​
+设备属性初始化​
+对于需要保证只有首次设置时有效的属性，可以使用该接口进行赋值操作，仅当前值为空时赋值操作才会生效，如当前值不为空，则赋值操作会被忽略。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 设备属性初始化属性
+    properties.put("key1", "value1");
+    properties.put("key2", "value2");
+} catch (Exception e) {
+    e.printStackTrace();
+}
+TapTapEvent.deviceInitialize(properties);
+
+设备属性更新​
+对于常规的设备属性，可使用该接口进行赋值操作，新的属性值将会直接覆盖旧的属性值。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 设备属性更新属性
+    properties.put("key1", "value1");
+    properties.put("key2", "value2");
+} catch (Exception e) {
+    e.printStackTrace();
+}
+TapTapEvent.deviceUpdate(properties);
+
+设备属性累加​
+对于数值类型的属性，可以使用该接口进行累加操作，调用后 TapDB 将对原属性值进行累加后保存结果值
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 设备属性累加属性
+    properties.put("key2", 100);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+TapTapEvent.deviceAdd(properties);
+
+上述代码示例中，属性值为整数。 累加操作也支持浮点数，不过浮点数相加有精度问题，开发者还需留意。
+
+修改账号属性​
+账号属性初始化​
+使用方法同设备属性初始化操作
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 账号初始化属性
+    properties.put("key1", "value1");
+    properties.put("key2", 100);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+TapTapEvent.userInitialize(properties);
+
+账号属性更新​
+使用方法同设备属性更新操作
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 账号更新属性
+    properties.put("key1", "value1");
+    properties.put("key2", 100);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+TapTapEvent.userUpdate(properties);
+
+账号属性累加​
+使用方法同设备属性累加操作
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+import org.json.JSONObject;
+
+JSONObject properties = new JSONObject();
+try {
+    // 账号累加属性
+    properties.put("key2", 100);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+TapTapEvent.userAdd(properties);
+
+收集设备指纹​
+允许 SDK 采集设备指纹用于辅助数据分析、广告归因，将使统计结果更加精确，
+
+信息
+请在权限申请、设置 IDFA 开关等操作结束后初始化 SDK，以保证设备指纹能够正常上报。
+
+手动设置 OAID（Android 推荐做法）​
+我们强烈推荐开发者使用手动设置 OAID 的方式，而不是依赖 SDK 自动获取。这样做可以避免 OAID 相关的兼容性问题，提高稳定性和性能。设置方法如下：
+
+初始化时禁用相关自动功能：
+
+设置 disableReflectionOAID = true 禁用反射获取 OAID（默认为 true）
+设置 disableAutoLogDeviceLogin = true 禁用自动上报设备登录事件（默认为 false）
+手动调用相关 API 完成设置：
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import com.taptap.sdk.core.TapTapEvent;
+
+// 手动设置 OAID
+TapTapEvent.setOAID("your_oaid_value");
+
+// 手动上报设备登录事件
+TapTapEvent.logDeviceLoginEvent();
+
+OAID 自动获取（Android 已废弃）​
+注意：为提高兼容性和性能，SDK 默认已禁用自动获取 OAID 功能（disableReflectionOAID = true）。我们强烈推荐使用"手动设置 OAID"的方式。如果您仍需使用自动获取 OAID 功能，可在初始化时设置 disableReflectionOAID = false 开启此功能，但需注意这可能带来兼容性问题。
+
+SDK 版本 3.28.2 及以上支持 OAID 版本为 1.0.5 ~ 2.4.0； 3.15.0 ~ 3.28.0 支持 OAID 版本为 1.0.5 ~ 2.1.0； 3.14.0 及以下支持 OAID 版本为 1.0.5 ~ 1.0.25
+
+TapDB SDK 在应用接入 OAID 第三方库时，会在发送相关事件中携带该参数（key 为 device_id4)。现支持该第三方库版本为 1.0.5 ~ 2.4.0，因不同版本变更较大，所以针对不同版本接入的说明如下：
+
+对于 1.0.5 ~ 1.0.25 不需要额外配置，只需应用添加对应第三方库的依赖即可。
+
+对于 1.0.26 ~ 2.4.0 除添加对应第三方库外，需要添加如下处理：
+
+1. 设置证书信息及配置文件​
+证书信息为应用通过 移动安全联盟邮箱 msa@caict.ac.cn 申请的 .cert.pem 文件内容, 该文件与包名对应。现支持两种设置方式：
+
+将 cert.pem 文件拷贝到应用 assets 目录，并注意该文件名应设置为 packageName.cert.pem , packageName 为当前应用包名。
+通过 SDK 的接口 setOAIDCert 将证书文件的内容进行设置
+以上两种方式选择一种即可，当两种同时使用时，优先使用通过接口设置的证书信息。
+
+配置文件为 supplierconfig.json, 应用需要将内部 appid 对应的内容修改为应用在对应应用市场的应用 ID，其他部分不需要修改，并将修改后的文件拷贝到 assets 目录下。
+
+2. 在应用工程中加载对应库文件​
+不同版本 OAID 第三方库对应的库文件名称如下：
+
+版本号	库名称
+1.0.30 ~ 2.4.0	msaoaidsec
+1.0.29	nllvm1632808251147706677
+1.0.27	nllvm1630571663641560568
+1.0.26	nllvm1623827671
+在 Android 项目工程自定义 Application 类的 onCreate 方法中添加加载第三方库代码，例如当应用接入的 OAID 版本为 1.2.1 时如下：
+
+System.loadLibrary("msaoaidsec");
+
+常见问题处理​
+当项目中已引入 OAID 库但上报时仍未发现设备 OAID 信息时，请检查以下几项
+
+设备时间是否正常
+对于 1.0.26 及以上版本证书所对应的包名是否和当前包名对应
+对于 1.0.26 及以上版本是否加载了其库文件以及库文件名称是否和版本对应
+应用在 Android 12 报错 java.lang.UnsatisfiedLinkError且 应用 minSdkVersion 大于等于 23 ，建议在 AndroidManifest.xml 文件 application 标签中添加 android:extractNativeLibs="true"
+IMEI（Android）​
+在 AndroidManifest.xml 增加如下条目，且用户同意权限的申请后，SDK 将自动采集 Android IMEI。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+IDFA（iOS）​
+由于 iOS14.5 以上系统，获取 IDFA 需要弹出窗口有用户确认，故 SDK 默认不获取 IDFA，可以调用接口开启 IDFA 获取。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+// Android 平台不适用
+
+
+我要反馈
+1

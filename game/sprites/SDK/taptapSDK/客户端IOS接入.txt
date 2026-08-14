@@ -1,0 +1,426 @@
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+let options = TapTapSdkOptions()
+options.clientId = "your_client_id" // 必须，开发者中心对应 Client ID
+options.clientToken = "your_client_token" // 必须，开发者中心对应 Client Token
+options.region = .CN // .CN：中国大陆，.overseas：其他国家或地区
+
+// 数据分析相关属性配置
+let eventOptions = TapTapEventOptions()
+eventOptions.channel = "channel name" // 分包渠道名称
+eventOptions.overrideBuiltInParameters = true //  自定义字段是否能覆盖内置字段,默认 false
+eventOptions.enableAutoIAPEvent = false // 是否自动上报苹果内购支付成功事件
+eventOptions.caid = "caid" // 国内 CAID 值
+eventOptions.enableAdvertiserIDCollection = false // 是否开启广告商 ID (IDFA) 收集，默认为 false
+
+let properties = ["custom_key": "value"] // 自定义属性配置
+eventOptions.properties = properties // 自定义属性，启动首个预置事件（device_login）会携带该属性
+
+let otherOptions = [eventOptions]
+// 初始化 SDK
+TapTapSDK.initWith(options, otherOptions: otherOptions)
+
+
+相关参数说明如下：
+
+字段	可为空	说明
+channel	是	渠道，如 AppStore、GooglePlay
+propertiesJson	是	上报到 device_login 事件的自定义参数
+overrideBuiltInParameters	是	是否能够覆盖内置参数，默认为 false
+enableAutoIAPEvent	是	是否开启自动上报 IAP 事件，默认为 true
+disableAutoLogDeviceLogin	是	是否禁用自动上报设备登录事件，仅 Android，默认为 false，
+caid	是	CAID，仅国内 iOS
+oaidCert	是	OAID 证书， 仅 Android，用于上报 OAID 仅国内生效
+disableReflectionOAID	是	是否禁用 OAID 反射，仅 Android，默认为 true
+enableAdvertiserIDCollection	是	是否开启广告商 ID （IDFA）收集，仅 iOS ，默认为 false，开启时需添加工程配置
+设置账号​
+设置账号 ID​
+调用该 API 记录一个账号，当账号登录时调用。
+
+调用后会上报一个账号登录（ user_login ）事件，并将这个设备的是否有用户注册过（ has_user ）属性置为 true。
+
+在重启应用或调用清除账号 ID（ clearUser ）前，上报的事件都会带有该账号 ID。
+
+字段	可为空	说明
+userId	否	账号的唯一字符串，字符串长度不大于 160，只能包含数字、大小写字母、下划线（_）、短横（-）、加号（+）、正斜线（/）、等号（=）、英文句号（.）、英文逗号（,）、英文冒号（:）
+开发者需要保证不同账号的 userId 均不相同。
+properties	是	账号登录（ user_login ）的事件属性
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+// 设置用户 ID
+TapTapEvent.setUserID(userId)
+
+// 设置用户 ID 及账号登录事件属性
+var properties = [String: Any]()
+properties["currentPoints"] = 10
+TapTapEvent.setUserID(userId, properties: properties)
+
+清除账号 ID​
+当用户进行登出时，可调用 clearUser 清除当前 SDK 中保存的账号 ID，后续上报的事件将不会带有账号 ID，调用该接口不会上报任何事件。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+TapTapEvent.clearUser()
+
+上报充值记录​
+提示
+接入 TapPayments 后无需手动上报 TapPayments 的充值数据，防止重复统计；
+
+在用户进行充值后，可调用该接口上报充值信息，调用后将上报 charge 事件，并将传入的参数作为事件的属性。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+let orderId = "订单 ID"
+// 定义充值事件属性
+var properties = [String: Any]()
+properties["on_sell"] = true
+// 上报充值事件
+TapTapEvent.logPurchasedEvent(orderId, productName:"商品名", amount: 100, currencyType: "CNY", paymentMethod:"支付宝", properties: properties)
+
+
+参数	可为空	说明
+orderId	否	订单 ID
+product	是	产品名称
+amount	否	充值金额（单位分，即无论什么币种，都需要乘以 100）
+currencyType	是	货币类型，遵循 ISO 4217 标准。参考：人民币 CNY，美元 USD；欧元 EUR
+payment	是	支付方式，如：支付宝
+properties	是	充值（ charge ）的事件属性
+注意:在条件允许的情况下推荐使用服务端充值统计接口，请参考 服务端接入文档
+
+广告变现收入​
+如需统计广告变现收入，请先在项目后台进入 工具 -> 扩展功能，找到 「变现收入」 并开启该功能。
+
+在广告联盟展示广告时，可上报 #ad_show 事件。本节主要介绍客户端接入；如需通过服务端上报，请参考服务端接入。游戏可任选其中一种方式，避免重复统计。
+
+参数	可为空	说明
+#ad_union_type	是	广告聚合平台，可传入 topon、gromore、admore、other
+#ad_placement_id	是	广告位 ID
+#ad_source_id	是	代码位 ID
+#ad_type	是	广告类型，可传入 reward、banner、native、interstitial、splash
+#ad_network	是	广告变现平台，可传入 dirichlet、csj、gdt、ks、mint、baidu、other，分别代表 Dirichlet、穿山甲、广点通、快手、汇量、百度、其他
+#ecpm	否	预估 eCPM 价格，单位为分
+currency_type	否	货币类型，遵循 ISO 4217 标准，例如 CNY、USD、EUR
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+var properties = [String: Any]()
+properties["#ad_union_type"] = "topon"
+properties["#ad_placement_id"] = "your_ad_placement_id"
+properties["#ad_source_id"] = "your_ad_source_id"
+properties["#ad_type"] = "reward"
+properties["#ad_network"] = "csj"
+properties["#ecpm"] = 6000
+properties["currency_type"] = "CNY"
+
+TapTapEvent.logEvent("#ad_show", properties: properties)
+
+自定义事件​
+上报事件​
+在 SDK 初始化完成后可使用该接口上报事件
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+// 定义事件属性
+var properties = [String: Any]()
+properties["#weapon"] = "axe"
+properties["#level"] = 10
+// 发送自定义事件
+TapTapEvent.logEvent(eventName, properties: properties)
+
+参数	可为空	说明
+eventName	否	事件的名称
+properties	是	事件的属性
+注意:
+
+事件名支持上报预置事件和自定义事件，其中自定义事件应以 # 开头
+事件属性的 key 值为属性的名称，支持 NSString 类型
+事件属性的 value 值为属性的名称，支持 NSString（最大长度 256 ）、NSNumber（取值区间为 [-9E15, 9E15] ）类型
+事件属性支持上报预置属性和自定属性，其中自定义属性应以 # 开头
+事件属性传入预置属性时，SDK 默认采集的预置属性将不被覆盖， 这个可以再初始化时候修改配置 overrideBuiltInParameters 控制。
+设置通用事件属性​
+对于一些所有事件都要携带的属性，建议使用通用事件属性实现。
+
+添加静态通用事件属性​
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+// 定义通用事件属性
+var staticProperties = [String: Any]()
+// 当设置属性 "#current_channel" 为 "TapDB" 时, 后续事件上报都会在事件属性中添加了 "#current_channel"字段
+staticProperties["#current_channel"] = "TapDB"
+// 设置通用事件属性
+TapTapEvent.addCommon(staticProperties)
+
+删除部分静态通用事件属性​
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+// 定义需要删除的通用事件属性名称
+let propertyNames = [propertyName1, propertyName2]
+// 从通用事件属性中移除
+TapTapEvent.clearCommonProperties(propertyNames)
+
+参数	可为空	说明
+propertyNames	否	静态通用属性名称数组
+清空全部静态通用属性​
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+TapTapEvent.clearAllCommonProperties()
+
+注册动态通用事件属性​
+对于可能随时发生变化的通用事件属性，可以注册动态通用事件属性回调，该回调会在每次调用时被触发，将计算好的属性添加到本次上报事件属性中。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+// 后续上报的事件都将携带 #currentLevel 属性，值为变量 level 在事件上报时刻的值
+TapTapEvent.registerDynamicProperties {
+    return ["#currentLevel": level]
+}
+
+注意:
+
+在上报事件或通用属性中使用相同属性名会出现属性覆盖的现象，属性覆盖的优先级从高到低依次为：事件属性、动态通用事件属性、静态通用事件属性、预置属性（例如 trackEvent 中设置的事件属性将覆盖动态通用事件属性、静态通用事件属性、预置属性中的同名属性）
+
+修改用户属性​
+TapDB 支持两种用户主体：设备和账号，你可以通过如下接口对这两种用户的属性进行操作。
+
+修改设备属性​
+设备属性初始化​
+对于需要保证只有首次设置时有效的属性，可以使用该接口进行赋值操作，仅当前值为空时赋值操作才会生效，如当前值不为空，则赋值操作会被忽略。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+var properties = [String: Any]()
+properties["firstActiveServer"] = "server1"
+// 该方法执行后设备表的 "#firstActiveServer" 字段值为 "server1"
+TapTapEvent.deviceInitialize(properties)
+// 多次设置同一属性时，后续执行不会生效，例如如下调用不会更新 "firstActiveServer" 的值
+// TapTapEvent.deviceInitialize(["firstActiveServer":"server2"])
+
+参数	可为空	说明
+properties	否	属性字典
+设备属性更新​
+对于常规的设备属性，可使用该接口进行赋值操作，新的属性值将会直接覆盖旧的属性值。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+// 定义要更新的属性
+var properties = [String: Any]()
+properties["currentPoints"] = 10
+// 该方法执行后，此时设备表的 "currentPoints" 字段值为 10
+TapTapEvent.deviceUpdate(properties)
+
+// 多次执行时会更新属性，例如执行以下方法时，此时设备表的 "currentPoints" 字段值为 42
+// TapTapEvent.deviceUpdate(["currentPoints":42])
+
+
+参数	可为空	说明
+properties	否	属性字典
+设备属性累加​
+对于数值类型的属性，可以使用该接口进行累加操作，调用后 TapDB 将对原属性值进行累加后保存结果值
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+// 定义要累加的属性
+var properties =[String: Any]()
+properties["totalPoints"] = 10
+
+// 执行该方法后，此时设备表的 "totalPoints" 字段值为 10
+TapTapEvent.deviceAdd(properties)
+
+// 执行该方法后，此时设备表的 "totalPoints" 字段值为 8
+TapTapEvent.deviceAdd(["totalPoints":-2])
+
+
+参数	可为空	说明
+properties	否	属性字典，value 仅支持数字类型
+上述代码示例中，属性值为整数。 累加操作也支持浮点数，不过浮点数相加有精度问题，开发者还需留意。
+
+修改账号属性​
+账号属性初始化​
+使用方法同设备属性初始化操作
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+var properties = [String: Any]()
+properties["firstActiveServer"] = "server1"
+TapTapEvent.userInitialize(properties)
+
+账号属性更新​
+使用方法同设备属性更新操作
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+TapTapEvent.userUpdate(["firstActiveServer":"server2"])
+
+账号属性累加​
+使用方法同设备属性累加操作
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+TapTapEvent.userAdd(["totalPoints": 10])
+
+收集设备指纹​
+允许 SDK 采集设备指纹用于辅助数据分析、广告归因，将使统计结果更加精确，
+
+信息
+请在权限申请、设置 IDFA 开关等操作结束后初始化 SDK，以保证设备指纹能够正常上报。
+
+手动设置 OAID（Android 推荐做法）​
+我们强烈推荐开发者使用手动设置 OAID 的方式，而不是依赖 SDK 自动获取。这样做可以避免 OAID 相关的兼容性问题，提高稳定性和性能。设置方法如下：
+
+初始化时禁用相关自动功能：
+
+设置 disableReflectionOAID = true 禁用反射获取 OAID（默认为 true）
+设置 disableAutoLogDeviceLogin = true 禁用自动上报设备登录事件（默认为 false）
+手动调用相关 API 完成设置：
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+import TapTapCoreSDK
+
+// iOS 平台不适用 OAID 设置
+
+// 手动上报设备登录事件
+TapTapEvent.logDeviceLoginEvent()
+
+OAID 自动获取（Android 已废弃）​
+注意：为提高兼容性和性能，SDK 默认已禁用自动获取 OAID 功能（disableReflectionOAID = true）。我们强烈推荐使用"手动设置 OAID"的方式。如果您仍需使用自动获取 OAID 功能，可在初始化时设置 disableReflectionOAID = false 开启此功能，但需注意这可能带来兼容性问题。
+
+SDK 版本 3.28.2 及以上支持 OAID 版本为 1.0.5 ~ 2.4.0； 3.15.0 ~ 3.28.0 支持 OAID 版本为 1.0.5 ~ 2.1.0； 3.14.0 及以下支持 OAID 版本为 1.0.5 ~ 1.0.25
+
+TapDB SDK 在应用接入 OAID 第三方库时，会在发送相关事件中携带该参数（key 为 device_id4)。现支持该第三方库版本为 1.0.5 ~ 2.4.0，因不同版本变更较大，所以针对不同版本接入的说明如下：
+
+对于 1.0.5 ~ 1.0.25 不需要额外配置，只需应用添加对应第三方库的依赖即可。
+
+对于 1.0.26 ~ 2.4.0 除添加对应第三方库外，需要添加如下处理：
+
+1. 设置证书信息及配置文件​
+证书信息为应用通过 移动安全联盟邮箱 msa@caict.ac.cn 申请的 .cert.pem 文件内容, 该文件与包名对应。现支持两种设置方式：
+
+将 cert.pem 文件拷贝到应用 assets 目录，并注意该文件名应设置为 packageName.cert.pem , packageName 为当前应用包名。
+通过 SDK 的接口 setOAIDCert 将证书文件的内容进行设置
+以上两种方式选择一种即可，当两种同时使用时，优先使用通过接口设置的证书信息。
+
+配置文件为 supplierconfig.json, 应用需要将内部 appid 对应的内容修改为应用在对应应用市场的应用 ID，其他部分不需要修改，并将修改后的文件拷贝到 assets 目录下。
+
+2. 在应用工程中加载对应库文件​
+不同版本 OAID 第三方库对应的库文件名称如下：
+
+版本号	库名称
+1.0.30 ~ 2.4.0	msaoaidsec
+1.0.29	nllvm1632808251147706677
+1.0.27	nllvm1630571663641560568
+1.0.26	nllvm1623827671
+在 Android 项目工程自定义 Application 类的 onCreate 方法中添加加载第三方库代码，例如当应用接入的 OAID 版本为 1.2.1 时如下：
+
+System.loadLibrary("msaoaidsec");
+
+常见问题处理​
+当项目中已引入 OAID 库但上报时仍未发现设备 OAID 信息时，请检查以下几项
+
+设备时间是否正常
+对于 1.0.26 及以上版本证书所对应的包名是否和当前包名对应
+对于 1.0.26 及以上版本是否加载了其库文件以及库文件名称是否和版本对应
+应用在 Android 12 报错 java.lang.UnsatisfiedLinkError且 应用 minSdkVersion 大于等于 23 ，建议在 AndroidManifest.xml 文件 application 标签中添加 android:extractNativeLibs="true"
+IMEI（Android）​
+在 AndroidManifest.xml 增加如下条目，且用户同意权限的申请后，SDK 将自动采集 Android IMEI。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+iOS 平台不适用
+
+IDFA（iOS）​
+由于 iOS14.5 以上系统，获取 IDFA 需要弹出窗口有用户确认，故 SDK 默认不获取 IDFA，可以调用接口开启 IDFA 获取。
+
+Unity
+Android Java
+Android Kotlin
+iOS Swift
+iOS Objective-C
+请确保 info.plist 中添加了权限请求描述文字，SDK 在初始化时将自动弹出权限请求窗口。
+
+<key>NSUserTrackingUsageDescription</key>
+<string>此标识符将用于向您推荐个性化广告（或其他描述）</string>
+
+在初始化时设置 TapTapSdkOptions 中的 enableAdvertiserIDCollection 为 true 开启 IDFA 采集开关。

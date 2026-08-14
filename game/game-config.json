@@ -1,0 +1,8333 @@
+{
+  "weapons": {
+    "sword": [
+      {
+        "room": 0,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2,
+        "dmg": 10,
+        "name": "剑 Lv.1"
+      },
+      {
+        "room": 1,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2,
+        "dmg": 12,
+        "name": "剑 Lv.2"
+      },
+      {
+        "room": 2,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2,
+        "dmg": 14,
+        "name": "剑 Lv.3"
+      },
+      {
+        "room": 3,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2,
+        "dmg": 15,
+        "name": "剑 Lv.4"
+      },
+      {
+        "room": 4,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 17,
+        "name": "剑 Lv.5"
+      },
+      {
+        "room": 5,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 19,
+        "name": "剑 Lv.6"
+      },
+      {
+        "room": 6,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 21,
+        "name": "剑 Lv.7"
+      },
+      {
+        "room": 7,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 23,
+        "name": "剑 Lv.8"
+      },
+      {
+        "room": 8,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 24,
+        "name": "剑 Lv.9"
+      },
+      {
+        "room": 9,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 26,
+        "name": "剑 Lv.10"
+      },
+      {
+        "room": 10,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 28,
+        "name": "剑 Lv.11"
+      },
+      {
+        "room": 11,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 30,
+        "name": "剑 Lv.12"
+      },
+      {
+        "room": 12,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 32,
+        "name": "剑 Lv.13"
+      },
+      {
+        "room": 13,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 33,
+        "name": "剑 Lv.14"
+      },
+      {
+        "room": 14,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 35,
+        "name": "剑 Lv.15"
+      },
+      {
+        "room": 15,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 37,
+        "name": "剑 Lv.16"
+      },
+      {
+        "room": 16,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 39,
+        "name": "剑 Lv.17"
+      },
+      {
+        "room": 17,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 41,
+        "name": "剑 Lv.18"
+      },
+      {
+        "room": 18,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 42,
+        "name": "剑 Lv.19"
+      },
+      {
+        "room": 19,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 44,
+        "name": "剑 Lv.20"
+      },
+      {
+        "room": 20,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 46,
+        "name": "剑 Lv.21"
+      },
+      {
+        "room": 21,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 48,
+        "name": "剑 Lv.22"
+      },
+      {
+        "room": 22,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 50,
+        "name": "剑 Lv.23"
+      },
+      {
+        "room": 23,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 51,
+        "name": "剑 Lv.24"
+      },
+      {
+        "room": 24,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 53,
+        "name": "剑 Lv.25"
+      },
+      {
+        "room": 25,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 55,
+        "name": "剑 Lv.26"
+      },
+      {
+        "room": 26,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 57,
+        "name": "剑 Lv.27"
+      },
+      {
+        "room": 27,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 59,
+        "name": "剑 Lv.28"
+      },
+      {
+        "room": 28,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 60,
+        "name": "剑 Lv.29"
+      },
+      {
+        "room": 29,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 62,
+        "name": "剑 Lv.30"
+      },
+      {
+        "room": 30,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 64,
+        "name": "剑 Lv.31"
+      },
+      {
+        "room": 31,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 66,
+        "name": "剑 Lv.32"
+      },
+      {
+        "room": 32,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 68,
+        "name": "剑 Lv.33"
+      },
+      {
+        "room": 33,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 69,
+        "name": "剑 Lv.34"
+      },
+      {
+        "room": 34,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 71,
+        "name": "剑 Lv.35"
+      },
+      {
+        "room": 35,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 73,
+        "name": "剑 Lv.36"
+      },
+      {
+        "room": 36,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 75,
+        "name": "剑 Lv.37"
+      },
+      {
+        "room": 37,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 77,
+        "name": "剑 Lv.38"
+      },
+      {
+        "room": 38,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 78,
+        "name": "剑 Lv.39"
+      },
+      {
+        "room": 39,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 80,
+        "name": "剑 Lv.40"
+      },
+      {
+        "room": 40,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 82,
+        "name": "剑 Lv.41"
+      },
+      {
+        "room": 41,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 84,
+        "name": "剑 Lv.42"
+      },
+      {
+        "room": 42,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 86,
+        "name": "剑 Lv.43"
+      },
+      {
+        "room": 43,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 87,
+        "name": "剑 Lv.44"
+      },
+      {
+        "room": 44,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 89,
+        "name": "剑 Lv.45"
+      },
+      {
+        "room": 45,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 91,
+        "name": "剑 Lv.46"
+      },
+      {
+        "room": 46,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 93,
+        "name": "剑 Lv.47"
+      },
+      {
+        "room": 47,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 95,
+        "name": "剑 Lv.48"
+      },
+      {
+        "room": 48,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 96,
+        "name": "剑 Lv.49"
+      },
+      {
+        "room": 49,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 98,
+        "name": "剑 Lv.50"
+      },
+      {
+        "room": 50,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 100,
+        "name": "剑 Lv.51"
+      },
+      {
+        "room": 51,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 102,
+        "name": "剑 Lv.52"
+      },
+      {
+        "room": 52,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 104,
+        "name": "剑 Lv.53"
+      },
+      {
+        "room": 53,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 105,
+        "name": "剑 Lv.54"
+      },
+      {
+        "room": 54,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 107,
+        "name": "剑 Lv.55"
+      },
+      {
+        "room": 55,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 109,
+        "name": "剑 Lv.56"
+      },
+      {
+        "room": 56,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 111,
+        "name": "剑 Lv.57"
+      },
+      {
+        "room": 57,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 113,
+        "name": "剑 Lv.58"
+      },
+      {
+        "room": 58,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 114,
+        "name": "剑 Lv.59"
+      },
+      {
+        "room": 59,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 116,
+        "name": "剑 Lv.60"
+      },
+      {
+        "room": 60,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 118,
+        "name": "剑 Lv.61"
+      },
+      {
+        "room": 61,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 120,
+        "name": "剑 Lv.62"
+      },
+      {
+        "room": 62,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 122,
+        "name": "剑 Lv.63"
+      },
+      {
+        "room": 63,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 123,
+        "name": "剑 Lv.64"
+      },
+      {
+        "room": 64,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 125,
+        "name": "剑 Lv.65"
+      },
+      {
+        "room": 65,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 127,
+        "name": "剑 Lv.66"
+      },
+      {
+        "room": 66,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 129,
+        "name": "剑 Lv.67"
+      },
+      {
+        "room": 67,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 131,
+        "name": "剑 Lv.68"
+      },
+      {
+        "room": 68,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 132,
+        "name": "剑 Lv.69"
+      },
+      {
+        "room": 69,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 134,
+        "name": "剑 Lv.70"
+      },
+      {
+        "room": 70,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 136,
+        "name": "剑 Lv.71"
+      },
+      {
+        "room": 71,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 138,
+        "name": "剑 Lv.72"
+      },
+      {
+        "room": 72,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 140,
+        "name": "剑 Lv.73"
+      },
+      {
+        "room": 73,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 141,
+        "name": "剑 Lv.74"
+      },
+      {
+        "room": 74,
+        "cd": 6,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 143,
+        "name": "剑 Lv.75"
+      },
+      {
+        "room": 75,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 145,
+        "name": "剑 Lv.76"
+      },
+      {
+        "room": 76,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 147,
+        "name": "剑 Lv.77"
+      },
+      {
+        "room": 77,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 149,
+        "name": "剑 Lv.78"
+      },
+      {
+        "room": 78,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 150,
+        "name": "剑 Lv.79"
+      },
+      {
+        "room": 79,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 152,
+        "name": "剑 Lv.80"
+      },
+      {
+        "room": 80,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 154,
+        "name": "剑 Lv.81"
+      },
+      {
+        "room": 81,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 156,
+        "name": "剑 Lv.82"
+      },
+      {
+        "room": 82,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 158,
+        "name": "剑 Lv.83"
+      },
+      {
+        "room": 83,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 159,
+        "name": "剑 Lv.84"
+      },
+      {
+        "room": 84,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 161,
+        "name": "剑 Lv.85"
+      },
+      {
+        "room": 85,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 163,
+        "name": "剑 Lv.86"
+      },
+      {
+        "room": 86,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 165,
+        "name": "剑 Lv.87"
+      },
+      {
+        "room": 87,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 167,
+        "name": "剑 Lv.88"
+      },
+      {
+        "room": 88,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 168,
+        "name": "剑 Lv.89"
+      },
+      {
+        "room": 89,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 170,
+        "name": "剑 Lv.90"
+      },
+      {
+        "room": 90,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 172,
+        "name": "剑 Lv.91"
+      },
+      {
+        "room": 91,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 174,
+        "name": "剑 Lv.92"
+      },
+      {
+        "room": 92,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 176,
+        "name": "剑 Lv.93"
+      },
+      {
+        "room": 93,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 177,
+        "name": "剑 Lv.94"
+      },
+      {
+        "room": 94,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 179,
+        "name": "剑 Lv.95"
+      },
+      {
+        "room": 95,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 181,
+        "name": "剑 Lv.96"
+      },
+      {
+        "room": 96,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 183,
+        "name": "剑 Lv.97"
+      },
+      {
+        "room": 97,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 185,
+        "name": "剑 Lv.98"
+      },
+      {
+        "room": 98,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 186,
+        "name": "剑 Lv.99"
+      },
+      {
+        "room": 99,
+        "cd": 5,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 188,
+        "name": "剑 Lv.100"
+      },
+      {
+        "room": 100,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 190,
+        "name": "剑 Lv.101"
+      },
+      {
+        "room": 101,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 192,
+        "name": "剑 Lv.102"
+      },
+      {
+        "room": 102,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 194,
+        "name": "剑 Lv.103"
+      },
+      {
+        "room": 103,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 195,
+        "name": "剑 Lv.104"
+      },
+      {
+        "room": 104,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 197,
+        "name": "剑 Lv.105"
+      },
+      {
+        "room": 105,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 199,
+        "name": "剑 Lv.106"
+      },
+      {
+        "room": 106,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 201,
+        "name": "剑 Lv.107"
+      },
+      {
+        "room": 107,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 203,
+        "name": "剑 Lv.108"
+      },
+      {
+        "room": 108,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 204,
+        "name": "剑 Lv.109"
+      },
+      {
+        "room": 109,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 206,
+        "name": "剑 Lv.110"
+      },
+      {
+        "room": 110,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 208,
+        "name": "剑 Lv.111"
+      },
+      {
+        "room": 111,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 210,
+        "name": "剑 Lv.112"
+      },
+      {
+        "room": 112,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 212,
+        "name": "剑 Lv.113"
+      },
+      {
+        "room": 113,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 213,
+        "name": "剑 Lv.114"
+      },
+      {
+        "room": 114,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 215,
+        "name": "剑 Lv.115"
+      },
+      {
+        "room": 115,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 217,
+        "name": "剑 Lv.116"
+      },
+      {
+        "room": 116,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 219,
+        "name": "剑 Lv.117"
+      },
+      {
+        "room": 117,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 221,
+        "name": "剑 Lv.118"
+      },
+      {
+        "room": 118,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 222,
+        "name": "剑 Lv.119"
+      },
+      {
+        "room": 119,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 224,
+        "name": "剑 Lv.120"
+      },
+      {
+        "room": 120,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 226,
+        "name": "剑 Lv.121"
+      },
+      {
+        "room": 121,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 228,
+        "name": "剑 Lv.122"
+      },
+      {
+        "room": 122,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 230,
+        "name": "剑 Lv.123"
+      },
+      {
+        "room": 123,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 231,
+        "name": "剑 Lv.124"
+      },
+      {
+        "room": 124,
+        "cd": 4,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 233,
+        "name": "剑 Lv.125"
+      },
+      {
+        "room": 125,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 235,
+        "name": "剑 Lv.126"
+      },
+      {
+        "room": 126,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 237,
+        "name": "剑 Lv.127"
+      },
+      {
+        "room": 127,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 239,
+        "name": "剑 Lv.128"
+      },
+      {
+        "room": 128,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 240,
+        "name": "剑 Lv.129"
+      },
+      {
+        "room": 129,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 242,
+        "name": "剑 Lv.130"
+      },
+      {
+        "room": 130,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 244,
+        "name": "剑 Lv.131"
+      },
+      {
+        "room": 131,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 246,
+        "name": "剑 Lv.132"
+      },
+      {
+        "room": 132,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 248,
+        "name": "剑 Lv.133"
+      },
+      {
+        "room": 133,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 249,
+        "name": "剑 Lv.134"
+      },
+      {
+        "room": 134,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 251,
+        "name": "剑 Lv.135"
+      },
+      {
+        "room": 135,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 253,
+        "name": "剑 Lv.136"
+      },
+      {
+        "room": 136,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 255,
+        "name": "剑 Lv.137"
+      },
+      {
+        "room": 137,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 257,
+        "name": "剑 Lv.138"
+      },
+      {
+        "room": 138,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 258,
+        "name": "剑 Lv.139"
+      },
+      {
+        "room": 139,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 260,
+        "name": "剑 Lv.140"
+      },
+      {
+        "room": 140,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 262,
+        "name": "剑 Lv.141"
+      },
+      {
+        "room": 141,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 264,
+        "name": "剑 Lv.142"
+      },
+      {
+        "room": 142,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 266,
+        "name": "剑 Lv.143"
+      },
+      {
+        "room": 143,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 267,
+        "name": "剑 Lv.144"
+      },
+      {
+        "room": 144,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 269,
+        "name": "剑 Lv.145"
+      },
+      {
+        "room": 145,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 271,
+        "name": "剑 Lv.146"
+      },
+      {
+        "room": 146,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 273,
+        "name": "剑 Lv.147"
+      },
+      {
+        "room": 147,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 275,
+        "name": "剑 Lv.148"
+      },
+      {
+        "room": 148,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 276,
+        "name": "剑 Lv.149"
+      },
+      {
+        "room": 149,
+        "cd": 3,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 278,
+        "name": "剑 Lv.150"
+      },
+      {
+        "room": 150,
+        "cd": 2,
+        "kind": "melee",
+        "rng": 4.3,
+        "dmg": 280,
+        "name": "剑 Lv.151"
+      },
+      {
+        "room": 151,
+        "cd": 2,
+        "kind": "melee",
+        "rng": 4.3,
+        "dmg": 282,
+        "name": "剑 Lv.152"
+      },
+      {
+        "room": 152,
+        "cd": 2,
+        "kind": "melee",
+        "rng": 4.3,
+        "dmg": 284,
+        "name": "剑 Lv.153"
+      }
+    ],
+    "bow": [
+      {
+        "room": 0,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8,
+        "dmg": 8,
+        "spd": 12,
+        "name": "弓 Lv.1"
+      },
+      {
+        "room": 1,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.1,
+        "dmg": 10,
+        "spd": 12,
+        "name": "弓 Lv.2"
+      },
+      {
+        "room": 2,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.2,
+        "dmg": 11,
+        "spd": 12,
+        "name": "弓 Lv.3"
+      },
+      {
+        "room": 3,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.2,
+        "dmg": 13,
+        "spd": 12,
+        "name": "弓 Lv.4"
+      },
+      {
+        "room": 4,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.3,
+        "dmg": 14,
+        "spd": 12,
+        "name": "弓 Lv.5"
+      },
+      {
+        "room": 5,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.4,
+        "dmg": 16,
+        "spd": 12,
+        "name": "弓 Lv.6"
+      },
+      {
+        "room": 6,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.5,
+        "dmg": 18,
+        "spd": 12,
+        "name": "弓 Lv.7"
+      },
+      {
+        "room": 7,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.6,
+        "dmg": 19,
+        "spd": 12,
+        "name": "弓 Lv.8"
+      },
+      {
+        "room": 8,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.6,
+        "dmg": 21,
+        "spd": 13,
+        "name": "弓 Lv.9"
+      },
+      {
+        "room": 9,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.7,
+        "dmg": 22,
+        "spd": 13,
+        "name": "弓 Lv.10"
+      },
+      {
+        "room": 10,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.8,
+        "dmg": 24,
+        "spd": 13,
+        "name": "弓 Lv.11"
+      },
+      {
+        "room": 11,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 8.9,
+        "dmg": 26,
+        "spd": 13,
+        "name": "弓 Lv.12"
+      },
+      {
+        "room": 12,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 9,
+        "dmg": 27,
+        "spd": 13,
+        "name": "弓 Lv.13"
+      },
+      {
+        "room": 13,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 9,
+        "dmg": 29,
+        "spd": 13,
+        "name": "弓 Lv.14"
+      },
+      {
+        "room": 14,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 9.1,
+        "dmg": 30,
+        "spd": 13,
+        "name": "弓 Lv.15"
+      },
+      {
+        "room": 15,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 9.2,
+        "dmg": 32,
+        "spd": 13,
+        "name": "弓 Lv.16"
+      },
+      {
+        "room": 16,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 9.3,
+        "dmg": 34,
+        "spd": 14,
+        "name": "弓 Lv.17"
+      },
+      {
+        "room": 17,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 9.4,
+        "dmg": 35,
+        "spd": 14,
+        "name": "弓 Lv.18"
+      },
+      {
+        "room": 18,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 9.4,
+        "dmg": 37,
+        "spd": 14,
+        "name": "弓 Lv.19"
+      },
+      {
+        "room": 19,
+        "cd": 12,
+        "kind": "ranged",
+        "rng": 9.5,
+        "dmg": 38,
+        "spd": 14,
+        "name": "弓 Lv.20"
+      },
+      {
+        "room": 20,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 9.6,
+        "dmg": 40,
+        "spd": 14,
+        "name": "弓 Lv.21"
+      },
+      {
+        "room": 21,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 9.7,
+        "dmg": 42,
+        "spd": 14,
+        "name": "弓 Lv.22"
+      },
+      {
+        "room": 22,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 9.8,
+        "dmg": 43,
+        "spd": 14,
+        "name": "弓 Lv.23"
+      },
+      {
+        "room": 23,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 9.8,
+        "dmg": 45,
+        "spd": 14,
+        "name": "弓 Lv.24"
+      },
+      {
+        "room": 24,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 9.9,
+        "dmg": 46,
+        "spd": 15,
+        "name": "弓 Lv.25"
+      },
+      {
+        "room": 25,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10,
+        "dmg": 48,
+        "spd": 15,
+        "name": "弓 Lv.26"
+      },
+      {
+        "room": 26,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.1,
+        "dmg": 50,
+        "spd": 15,
+        "name": "弓 Lv.27"
+      },
+      {
+        "room": 27,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.2,
+        "dmg": 51,
+        "spd": 15,
+        "name": "弓 Lv.28"
+      },
+      {
+        "room": 28,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.2,
+        "dmg": 53,
+        "spd": 15,
+        "name": "弓 Lv.29"
+      },
+      {
+        "room": 29,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.3,
+        "dmg": 54,
+        "spd": 15,
+        "name": "弓 Lv.30"
+      },
+      {
+        "room": 30,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.4,
+        "dmg": 56,
+        "spd": 15,
+        "name": "弓 Lv.31"
+      },
+      {
+        "room": 31,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.5,
+        "dmg": 58,
+        "spd": 15,
+        "name": "弓 Lv.32"
+      },
+      {
+        "room": 32,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.6,
+        "dmg": 59,
+        "spd": 16,
+        "name": "弓 Lv.33"
+      },
+      {
+        "room": 33,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.6,
+        "dmg": 61,
+        "spd": 16,
+        "name": "弓 Lv.34"
+      },
+      {
+        "room": 34,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.7,
+        "dmg": 62,
+        "spd": 16,
+        "name": "弓 Lv.35"
+      },
+      {
+        "room": 35,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.8,
+        "dmg": 64,
+        "spd": 16,
+        "name": "弓 Lv.36"
+      },
+      {
+        "room": 36,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 10.9,
+        "dmg": 66,
+        "spd": 16,
+        "name": "弓 Lv.37"
+      },
+      {
+        "room": 37,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 11,
+        "dmg": 67,
+        "spd": 16,
+        "name": "弓 Lv.38"
+      },
+      {
+        "room": 38,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 11,
+        "dmg": 69,
+        "spd": 16,
+        "name": "弓 Lv.39"
+      },
+      {
+        "room": 39,
+        "cd": 11,
+        "kind": "ranged",
+        "rng": 11.1,
+        "dmg": 70,
+        "spd": 16,
+        "name": "弓 Lv.40"
+      },
+      {
+        "room": 40,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.2,
+        "dmg": 72,
+        "spd": 17,
+        "name": "弓 Lv.41"
+      },
+      {
+        "room": 41,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.3,
+        "dmg": 74,
+        "spd": 17,
+        "name": "弓 Lv.42"
+      },
+      {
+        "room": 42,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.4,
+        "dmg": 75,
+        "spd": 17,
+        "name": "弓 Lv.43"
+      },
+      {
+        "room": 43,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.4,
+        "dmg": 77,
+        "spd": 17,
+        "name": "弓 Lv.44"
+      },
+      {
+        "room": 44,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.5,
+        "dmg": 78,
+        "spd": 17,
+        "name": "弓 Lv.45"
+      },
+      {
+        "room": 45,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.6,
+        "dmg": 80,
+        "spd": 17,
+        "name": "弓 Lv.46"
+      },
+      {
+        "room": 46,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.7,
+        "dmg": 82,
+        "spd": 17,
+        "name": "弓 Lv.47"
+      },
+      {
+        "room": 47,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.8,
+        "dmg": 83,
+        "spd": 17,
+        "name": "弓 Lv.48"
+      },
+      {
+        "room": 48,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.8,
+        "dmg": 85,
+        "spd": 18,
+        "name": "弓 Lv.49"
+      },
+      {
+        "room": 49,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 11.9,
+        "dmg": 86,
+        "spd": 18,
+        "name": "弓 Lv.50"
+      },
+      {
+        "room": 50,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12,
+        "dmg": 88,
+        "spd": 18,
+        "name": "弓 Lv.51"
+      },
+      {
+        "room": 51,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.1,
+        "dmg": 90,
+        "spd": 18,
+        "name": "弓 Lv.52"
+      },
+      {
+        "room": 52,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.2,
+        "dmg": 91,
+        "spd": 18,
+        "name": "弓 Lv.53"
+      },
+      {
+        "room": 53,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.2,
+        "dmg": 93,
+        "spd": 18,
+        "name": "弓 Lv.54"
+      },
+      {
+        "room": 54,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.3,
+        "dmg": 94,
+        "spd": 18,
+        "name": "弓 Lv.55"
+      },
+      {
+        "room": 55,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.4,
+        "dmg": 96,
+        "spd": 18,
+        "name": "弓 Lv.56"
+      },
+      {
+        "room": 56,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.5,
+        "dmg": 98,
+        "spd": 19,
+        "name": "弓 Lv.57"
+      },
+      {
+        "room": 57,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.6,
+        "dmg": 99,
+        "spd": 19,
+        "name": "弓 Lv.58"
+      },
+      {
+        "room": 58,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.6,
+        "dmg": 101,
+        "spd": 19,
+        "name": "弓 Lv.59"
+      },
+      {
+        "room": 59,
+        "cd": 10,
+        "kind": "ranged",
+        "rng": 12.7,
+        "dmg": 102,
+        "spd": 19,
+        "name": "弓 Lv.60"
+      },
+      {
+        "room": 60,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 12.8,
+        "dmg": 104,
+        "spd": 19,
+        "name": "弓 Lv.61"
+      },
+      {
+        "room": 61,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 12.9,
+        "dmg": 106,
+        "spd": 19,
+        "name": "弓 Lv.62"
+      },
+      {
+        "room": 62,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13,
+        "dmg": 107,
+        "spd": 19,
+        "name": "弓 Lv.63"
+      },
+      {
+        "room": 63,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13,
+        "dmg": 109,
+        "spd": 19,
+        "name": "弓 Lv.64"
+      },
+      {
+        "room": 64,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.1,
+        "dmg": 110,
+        "spd": 20,
+        "name": "弓 Lv.65"
+      },
+      {
+        "room": 65,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.2,
+        "dmg": 112,
+        "spd": 20,
+        "name": "弓 Lv.66"
+      },
+      {
+        "room": 66,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.3,
+        "dmg": 114,
+        "spd": 20,
+        "name": "弓 Lv.67"
+      },
+      {
+        "room": 67,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.4,
+        "dmg": 115,
+        "spd": 20,
+        "name": "弓 Lv.68"
+      },
+      {
+        "room": 68,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.4,
+        "dmg": 117,
+        "spd": 20,
+        "name": "弓 Lv.69"
+      },
+      {
+        "room": 69,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.5,
+        "dmg": 118,
+        "spd": 20,
+        "name": "弓 Lv.70"
+      },
+      {
+        "room": 70,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.6,
+        "dmg": 120,
+        "spd": 20,
+        "name": "弓 Lv.71"
+      },
+      {
+        "room": 71,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.7,
+        "dmg": 122,
+        "spd": 20,
+        "name": "弓 Lv.72"
+      },
+      {
+        "room": 72,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.8,
+        "dmg": 123,
+        "spd": 21,
+        "name": "弓 Lv.73"
+      },
+      {
+        "room": 73,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.8,
+        "dmg": 125,
+        "spd": 21,
+        "name": "弓 Lv.74"
+      },
+      {
+        "room": 74,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 13.9,
+        "dmg": 126,
+        "spd": 21,
+        "name": "弓 Lv.75"
+      },
+      {
+        "room": 75,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 14,
+        "dmg": 128,
+        "spd": 21,
+        "name": "弓 Lv.76"
+      },
+      {
+        "room": 76,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 14.1,
+        "dmg": 130,
+        "spd": 21,
+        "name": "弓 Lv.77"
+      },
+      {
+        "room": 77,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 14.2,
+        "dmg": 131,
+        "spd": 21,
+        "name": "弓 Lv.78"
+      },
+      {
+        "room": 78,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 14.2,
+        "dmg": 133,
+        "spd": 21,
+        "name": "弓 Lv.79"
+      },
+      {
+        "room": 79,
+        "cd": 9,
+        "kind": "ranged",
+        "rng": 14.3,
+        "dmg": 134,
+        "spd": 21,
+        "name": "弓 Lv.80"
+      },
+      {
+        "room": 80,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 14.4,
+        "dmg": 136,
+        "spd": 22,
+        "name": "弓 Lv.81"
+      },
+      {
+        "room": 81,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 14.5,
+        "dmg": 138,
+        "spd": 22,
+        "name": "弓 Lv.82"
+      },
+      {
+        "room": 82,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 14.6,
+        "dmg": 139,
+        "spd": 22,
+        "name": "弓 Lv.83"
+      },
+      {
+        "room": 83,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 14.6,
+        "dmg": 141,
+        "spd": 22,
+        "name": "弓 Lv.84"
+      },
+      {
+        "room": 84,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 14.7,
+        "dmg": 142,
+        "spd": 22,
+        "name": "弓 Lv.85"
+      },
+      {
+        "room": 85,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 14.8,
+        "dmg": 144,
+        "spd": 22,
+        "name": "弓 Lv.86"
+      },
+      {
+        "room": 86,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 14.9,
+        "dmg": 146,
+        "spd": 22,
+        "name": "弓 Lv.87"
+      },
+      {
+        "room": 87,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15,
+        "dmg": 147,
+        "spd": 22,
+        "name": "弓 Lv.88"
+      },
+      {
+        "room": 88,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15,
+        "dmg": 149,
+        "spd": 23,
+        "name": "弓 Lv.89"
+      },
+      {
+        "room": 89,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.1,
+        "dmg": 150,
+        "spd": 23,
+        "name": "弓 Lv.90"
+      },
+      {
+        "room": 90,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.2,
+        "dmg": 152,
+        "spd": 23,
+        "name": "弓 Lv.91"
+      },
+      {
+        "room": 91,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.3,
+        "dmg": 154,
+        "spd": 23,
+        "name": "弓 Lv.92"
+      },
+      {
+        "room": 92,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.4,
+        "dmg": 155,
+        "spd": 23,
+        "name": "弓 Lv.93"
+      },
+      {
+        "room": 93,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.4,
+        "dmg": 157,
+        "spd": 23,
+        "name": "弓 Lv.94"
+      },
+      {
+        "room": 94,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.5,
+        "dmg": 158,
+        "spd": 23,
+        "name": "弓 Lv.95"
+      },
+      {
+        "room": 95,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.6,
+        "dmg": 160,
+        "spd": 23,
+        "name": "弓 Lv.96"
+      },
+      {
+        "room": 96,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.7,
+        "dmg": 162,
+        "spd": 24,
+        "name": "弓 Lv.97"
+      },
+      {
+        "room": 97,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.8,
+        "dmg": 163,
+        "spd": 24,
+        "name": "弓 Lv.98"
+      },
+      {
+        "room": 98,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.8,
+        "dmg": 165,
+        "spd": 24,
+        "name": "弓 Lv.99"
+      },
+      {
+        "room": 99,
+        "cd": 8,
+        "kind": "ranged",
+        "rng": 15.9,
+        "dmg": 166,
+        "spd": 24,
+        "name": "弓 Lv.100"
+      },
+      {
+        "room": 100,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16,
+        "dmg": 168,
+        "spd": 24,
+        "name": "弓 Lv.101"
+      },
+      {
+        "room": 101,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.1,
+        "dmg": 170,
+        "spd": 24,
+        "name": "弓 Lv.102"
+      },
+      {
+        "room": 102,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.2,
+        "dmg": 171,
+        "spd": 24,
+        "name": "弓 Lv.103"
+      },
+      {
+        "room": 103,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.2,
+        "dmg": 173,
+        "spd": 24,
+        "name": "弓 Lv.104"
+      },
+      {
+        "room": 104,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.3,
+        "dmg": 174,
+        "spd": 25,
+        "name": "弓 Lv.105"
+      },
+      {
+        "room": 105,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.4,
+        "dmg": 176,
+        "spd": 25,
+        "name": "弓 Lv.106"
+      },
+      {
+        "room": 106,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.5,
+        "dmg": 178,
+        "spd": 25,
+        "name": "弓 Lv.107"
+      },
+      {
+        "room": 107,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.6,
+        "dmg": 179,
+        "spd": 25,
+        "name": "弓 Lv.108"
+      },
+      {
+        "room": 108,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.6,
+        "dmg": 181,
+        "spd": 25,
+        "name": "弓 Lv.109"
+      },
+      {
+        "room": 109,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.7,
+        "dmg": 182,
+        "spd": 25,
+        "name": "弓 Lv.110"
+      },
+      {
+        "room": 110,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.8,
+        "dmg": 184,
+        "spd": 25,
+        "name": "弓 Lv.111"
+      },
+      {
+        "room": 111,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 16.9,
+        "dmg": 186,
+        "spd": 25,
+        "name": "弓 Lv.112"
+      },
+      {
+        "room": 112,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 17,
+        "dmg": 187,
+        "spd": 26,
+        "name": "弓 Lv.113"
+      },
+      {
+        "room": 113,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 17,
+        "dmg": 189,
+        "spd": 26,
+        "name": "弓 Lv.114"
+      },
+      {
+        "room": 114,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 17.1,
+        "dmg": 190,
+        "spd": 26,
+        "name": "弓 Lv.115"
+      },
+      {
+        "room": 115,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 17.2,
+        "dmg": 192,
+        "spd": 26,
+        "name": "弓 Lv.116"
+      },
+      {
+        "room": 116,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 17.3,
+        "dmg": 194,
+        "spd": 26,
+        "name": "弓 Lv.117"
+      },
+      {
+        "room": 117,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 17.4,
+        "dmg": 195,
+        "spd": 26,
+        "name": "弓 Lv.118"
+      },
+      {
+        "room": 118,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 17.4,
+        "dmg": 197,
+        "spd": 26,
+        "name": "弓 Lv.119"
+      },
+      {
+        "room": 119,
+        "cd": 7,
+        "kind": "ranged",
+        "rng": 17.5,
+        "dmg": 198,
+        "spd": 26,
+        "name": "弓 Lv.120"
+      },
+      {
+        "room": 120,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 17.6,
+        "dmg": 200,
+        "spd": 27,
+        "name": "弓 Lv.121"
+      },
+      {
+        "room": 121,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 17.7,
+        "dmg": 202,
+        "spd": 27,
+        "name": "弓 Lv.122"
+      },
+      {
+        "room": 122,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 17.8,
+        "dmg": 203,
+        "spd": 27,
+        "name": "弓 Lv.123"
+      },
+      {
+        "room": 123,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 17.8,
+        "dmg": 205,
+        "spd": 27,
+        "name": "弓 Lv.124"
+      },
+      {
+        "room": 124,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 17.9,
+        "dmg": 206,
+        "spd": 27,
+        "name": "弓 Lv.125"
+      },
+      {
+        "room": 125,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18,
+        "dmg": 208,
+        "spd": 27,
+        "name": "弓 Lv.126"
+      },
+      {
+        "room": 126,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.1,
+        "dmg": 210,
+        "spd": 27,
+        "name": "弓 Lv.127"
+      },
+      {
+        "room": 127,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.2,
+        "dmg": 211,
+        "spd": 27,
+        "name": "弓 Lv.128"
+      },
+      {
+        "room": 128,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.2,
+        "dmg": 213,
+        "spd": 28,
+        "name": "弓 Lv.129"
+      },
+      {
+        "room": 129,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.3,
+        "dmg": 214,
+        "spd": 28,
+        "name": "弓 Lv.130"
+      },
+      {
+        "room": 130,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.4,
+        "dmg": 216,
+        "spd": 28,
+        "name": "弓 Lv.131"
+      },
+      {
+        "room": 131,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.5,
+        "dmg": 218,
+        "spd": 28,
+        "name": "弓 Lv.132"
+      },
+      {
+        "room": 132,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.6,
+        "dmg": 219,
+        "spd": 28,
+        "name": "弓 Lv.133"
+      },
+      {
+        "room": 133,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.6,
+        "dmg": 221,
+        "spd": 28,
+        "name": "弓 Lv.134"
+      },
+      {
+        "room": 134,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.7,
+        "dmg": 222,
+        "spd": 28,
+        "name": "弓 Lv.135"
+      },
+      {
+        "room": 135,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.8,
+        "dmg": 224,
+        "spd": 28,
+        "name": "弓 Lv.136"
+      },
+      {
+        "room": 136,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 18.9,
+        "dmg": 226,
+        "spd": 29,
+        "name": "弓 Lv.137"
+      },
+      {
+        "room": 137,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 19,
+        "dmg": 227,
+        "spd": 29,
+        "name": "弓 Lv.138"
+      },
+      {
+        "room": 138,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 19,
+        "dmg": 229,
+        "spd": 29,
+        "name": "弓 Lv.139"
+      },
+      {
+        "room": 139,
+        "cd": 6,
+        "kind": "ranged",
+        "rng": 19.1,
+        "dmg": 230,
+        "spd": 29,
+        "name": "弓 Lv.140"
+      },
+      {
+        "room": 140,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.2,
+        "dmg": 232,
+        "spd": 29,
+        "name": "弓 Lv.141"
+      },
+      {
+        "room": 141,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.3,
+        "dmg": 234,
+        "spd": 29,
+        "name": "弓 Lv.142"
+      },
+      {
+        "room": 142,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.4,
+        "dmg": 235,
+        "spd": 29,
+        "name": "弓 Lv.143"
+      },
+      {
+        "room": 143,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.4,
+        "dmg": 237,
+        "spd": 29,
+        "name": "弓 Lv.144"
+      },
+      {
+        "room": 144,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.5,
+        "dmg": 238,
+        "spd": 30,
+        "name": "弓 Lv.145"
+      },
+      {
+        "room": 145,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.6,
+        "dmg": 240,
+        "spd": 30,
+        "name": "弓 Lv.146"
+      },
+      {
+        "room": 146,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.7,
+        "dmg": 242,
+        "spd": 30,
+        "name": "弓 Lv.147"
+      },
+      {
+        "room": 147,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.8,
+        "dmg": 243,
+        "spd": 30,
+        "name": "弓 Lv.148"
+      },
+      {
+        "room": 148,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.8,
+        "dmg": 245,
+        "spd": 30,
+        "name": "弓 Lv.149"
+      },
+      {
+        "room": 149,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 19.9,
+        "dmg": 246,
+        "spd": 30,
+        "name": "弓 Lv.150"
+      },
+      {
+        "room": 150,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 20,
+        "dmg": 248,
+        "spd": 30,
+        "name": "弓 Lv.151"
+      },
+      {
+        "room": 151,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 20.1,
+        "dmg": 250,
+        "spd": 30,
+        "name": "弓 Lv.152"
+      },
+      {
+        "room": 152,
+        "cd": 5,
+        "kind": "ranged",
+        "rng": 20.2,
+        "dmg": 251,
+        "spd": 30,
+        "name": "弓 Lv.153"
+      }
+    ],
+    "shield": [
+      {
+        "room": 0,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2,
+        "dmg": 5,
+        "name": "盾 Lv.1"
+      },
+      {
+        "room": 1,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2,
+        "dmg": 7,
+        "name": "盾 Lv.2"
+      },
+      {
+        "room": 2,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2,
+        "dmg": 9,
+        "name": "盾 Lv.3"
+      },
+      {
+        "room": 3,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2,
+        "dmg": 10,
+        "name": "盾 Lv.4"
+      },
+      {
+        "room": 4,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 12,
+        "name": "盾 Lv.5"
+      },
+      {
+        "room": 5,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 14,
+        "name": "盾 Lv.6"
+      },
+      {
+        "room": 6,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 16,
+        "name": "盾 Lv.7"
+      },
+      {
+        "room": 7,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 18,
+        "name": "盾 Lv.8"
+      },
+      {
+        "room": 8,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 19,
+        "name": "盾 Lv.9"
+      },
+      {
+        "room": 9,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 21,
+        "name": "盾 Lv.10"
+      },
+      {
+        "room": 10,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.1,
+        "dmg": 23,
+        "name": "盾 Lv.11"
+      },
+      {
+        "room": 11,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 25,
+        "name": "盾 Lv.12"
+      },
+      {
+        "room": 12,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 27,
+        "name": "盾 Lv.13"
+      },
+      {
+        "room": 13,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 28,
+        "name": "盾 Lv.14"
+      },
+      {
+        "room": 14,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 30,
+        "name": "盾 Lv.15"
+      },
+      {
+        "room": 15,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 32,
+        "name": "盾 Lv.16"
+      },
+      {
+        "room": 16,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.2,
+        "dmg": 34,
+        "name": "盾 Lv.17"
+      },
+      {
+        "room": 17,
+        "cd": 15,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 36,
+        "name": "盾 Lv.18"
+      },
+      {
+        "room": 18,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 37,
+        "name": "盾 Lv.19"
+      },
+      {
+        "room": 19,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 39,
+        "name": "盾 Lv.20"
+      },
+      {
+        "room": 20,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 41,
+        "name": "盾 Lv.21"
+      },
+      {
+        "room": 21,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 43,
+        "name": "盾 Lv.22"
+      },
+      {
+        "room": 22,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 45,
+        "name": "盾 Lv.23"
+      },
+      {
+        "room": 23,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.3,
+        "dmg": 46,
+        "name": "盾 Lv.24"
+      },
+      {
+        "room": 24,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 48,
+        "name": "盾 Lv.25"
+      },
+      {
+        "room": 25,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 50,
+        "name": "盾 Lv.26"
+      },
+      {
+        "room": 26,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 52,
+        "name": "盾 Lv.27"
+      },
+      {
+        "room": 27,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 54,
+        "name": "盾 Lv.28"
+      },
+      {
+        "room": 28,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 55,
+        "name": "盾 Lv.29"
+      },
+      {
+        "room": 29,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.4,
+        "dmg": 57,
+        "name": "盾 Lv.30"
+      },
+      {
+        "room": 30,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 59,
+        "name": "盾 Lv.31"
+      },
+      {
+        "room": 31,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 61,
+        "name": "盾 Lv.32"
+      },
+      {
+        "room": 32,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 63,
+        "name": "盾 Lv.33"
+      },
+      {
+        "room": 33,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 64,
+        "name": "盾 Lv.34"
+      },
+      {
+        "room": 34,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 66,
+        "name": "盾 Lv.35"
+      },
+      {
+        "room": 35,
+        "cd": 14,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 68,
+        "name": "盾 Lv.36"
+      },
+      {
+        "room": 36,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.5,
+        "dmg": 70,
+        "name": "盾 Lv.37"
+      },
+      {
+        "room": 37,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 72,
+        "name": "盾 Lv.38"
+      },
+      {
+        "room": 38,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 73,
+        "name": "盾 Lv.39"
+      },
+      {
+        "room": 39,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 75,
+        "name": "盾 Lv.40"
+      },
+      {
+        "room": 40,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 77,
+        "name": "盾 Lv.41"
+      },
+      {
+        "room": 41,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 79,
+        "name": "盾 Lv.42"
+      },
+      {
+        "room": 42,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 81,
+        "name": "盾 Lv.43"
+      },
+      {
+        "room": 43,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.6,
+        "dmg": 82,
+        "name": "盾 Lv.44"
+      },
+      {
+        "room": 44,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 84,
+        "name": "盾 Lv.45"
+      },
+      {
+        "room": 45,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 86,
+        "name": "盾 Lv.46"
+      },
+      {
+        "room": 46,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 88,
+        "name": "盾 Lv.47"
+      },
+      {
+        "room": 47,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 90,
+        "name": "盾 Lv.48"
+      },
+      {
+        "room": 48,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 91,
+        "name": "盾 Lv.49"
+      },
+      {
+        "room": 49,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.7,
+        "dmg": 93,
+        "name": "盾 Lv.50"
+      },
+      {
+        "room": 50,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 95,
+        "name": "盾 Lv.51"
+      },
+      {
+        "room": 51,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 97,
+        "name": "盾 Lv.52"
+      },
+      {
+        "room": 52,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 99,
+        "name": "盾 Lv.53"
+      },
+      {
+        "room": 53,
+        "cd": 13,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 100,
+        "name": "盾 Lv.54"
+      },
+      {
+        "room": 54,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 102,
+        "name": "盾 Lv.55"
+      },
+      {
+        "room": 55,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 104,
+        "name": "盾 Lv.56"
+      },
+      {
+        "room": 56,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.8,
+        "dmg": 106,
+        "name": "盾 Lv.57"
+      },
+      {
+        "room": 57,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 108,
+        "name": "盾 Lv.58"
+      },
+      {
+        "room": 58,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 109,
+        "name": "盾 Lv.59"
+      },
+      {
+        "room": 59,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 111,
+        "name": "盾 Lv.60"
+      },
+      {
+        "room": 60,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 113,
+        "name": "盾 Lv.61"
+      },
+      {
+        "room": 61,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 115,
+        "name": "盾 Lv.62"
+      },
+      {
+        "room": 62,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 117,
+        "name": "盾 Lv.63"
+      },
+      {
+        "room": 63,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 2.9,
+        "dmg": 118,
+        "name": "盾 Lv.64"
+      },
+      {
+        "room": 64,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 120,
+        "name": "盾 Lv.65"
+      },
+      {
+        "room": 65,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 122,
+        "name": "盾 Lv.66"
+      },
+      {
+        "room": 66,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 124,
+        "name": "盾 Lv.67"
+      },
+      {
+        "room": 67,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 126,
+        "name": "盾 Lv.68"
+      },
+      {
+        "room": 68,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 127,
+        "name": "盾 Lv.69"
+      },
+      {
+        "room": 69,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 129,
+        "name": "盾 Lv.70"
+      },
+      {
+        "room": 70,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 3,
+        "dmg": 131,
+        "name": "盾 Lv.71"
+      },
+      {
+        "room": 71,
+        "cd": 12,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 133,
+        "name": "盾 Lv.72"
+      },
+      {
+        "room": 72,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 135,
+        "name": "盾 Lv.73"
+      },
+      {
+        "room": 73,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 136,
+        "name": "盾 Lv.74"
+      },
+      {
+        "room": 74,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 138,
+        "name": "盾 Lv.75"
+      },
+      {
+        "room": 75,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 140,
+        "name": "盾 Lv.76"
+      },
+      {
+        "room": 76,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.1,
+        "dmg": 142,
+        "name": "盾 Lv.77"
+      },
+      {
+        "room": 77,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 144,
+        "name": "盾 Lv.78"
+      },
+      {
+        "room": 78,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 145,
+        "name": "盾 Lv.79"
+      },
+      {
+        "room": 79,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 147,
+        "name": "盾 Lv.80"
+      },
+      {
+        "room": 80,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 149,
+        "name": "盾 Lv.81"
+      },
+      {
+        "room": 81,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 151,
+        "name": "盾 Lv.82"
+      },
+      {
+        "room": 82,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 153,
+        "name": "盾 Lv.83"
+      },
+      {
+        "room": 83,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.2,
+        "dmg": 154,
+        "name": "盾 Lv.84"
+      },
+      {
+        "room": 84,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 156,
+        "name": "盾 Lv.85"
+      },
+      {
+        "room": 85,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 158,
+        "name": "盾 Lv.86"
+      },
+      {
+        "room": 86,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 160,
+        "name": "盾 Lv.87"
+      },
+      {
+        "room": 87,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 162,
+        "name": "盾 Lv.88"
+      },
+      {
+        "room": 88,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 163,
+        "name": "盾 Lv.89"
+      },
+      {
+        "room": 89,
+        "cd": 11,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 165,
+        "name": "盾 Lv.90"
+      },
+      {
+        "room": 90,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.3,
+        "dmg": 167,
+        "name": "盾 Lv.91"
+      },
+      {
+        "room": 91,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 169,
+        "name": "盾 Lv.92"
+      },
+      {
+        "room": 92,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 171,
+        "name": "盾 Lv.93"
+      },
+      {
+        "room": 93,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 172,
+        "name": "盾 Lv.94"
+      },
+      {
+        "room": 94,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 174,
+        "name": "盾 Lv.95"
+      },
+      {
+        "room": 95,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 176,
+        "name": "盾 Lv.96"
+      },
+      {
+        "room": 96,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.4,
+        "dmg": 178,
+        "name": "盾 Lv.97"
+      },
+      {
+        "room": 97,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 180,
+        "name": "盾 Lv.98"
+      },
+      {
+        "room": 98,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 181,
+        "name": "盾 Lv.99"
+      },
+      {
+        "room": 99,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 183,
+        "name": "盾 Lv.100"
+      },
+      {
+        "room": 100,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 185,
+        "name": "盾 Lv.101"
+      },
+      {
+        "room": 101,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 187,
+        "name": "盾 Lv.102"
+      },
+      {
+        "room": 102,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 189,
+        "name": "盾 Lv.103"
+      },
+      {
+        "room": 103,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.5,
+        "dmg": 190,
+        "name": "盾 Lv.104"
+      },
+      {
+        "room": 104,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 192,
+        "name": "盾 Lv.105"
+      },
+      {
+        "room": 105,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 194,
+        "name": "盾 Lv.106"
+      },
+      {
+        "room": 106,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 196,
+        "name": "盾 Lv.107"
+      },
+      {
+        "room": 107,
+        "cd": 10,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 198,
+        "name": "盾 Lv.108"
+      },
+      {
+        "room": 108,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 199,
+        "name": "盾 Lv.109"
+      },
+      {
+        "room": 109,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 201,
+        "name": "盾 Lv.110"
+      },
+      {
+        "room": 110,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.6,
+        "dmg": 203,
+        "name": "盾 Lv.111"
+      },
+      {
+        "room": 111,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 205,
+        "name": "盾 Lv.112"
+      },
+      {
+        "room": 112,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 207,
+        "name": "盾 Lv.113"
+      },
+      {
+        "room": 113,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 208,
+        "name": "盾 Lv.114"
+      },
+      {
+        "room": 114,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 210,
+        "name": "盾 Lv.115"
+      },
+      {
+        "room": 115,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 212,
+        "name": "盾 Lv.116"
+      },
+      {
+        "room": 116,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.7,
+        "dmg": 214,
+        "name": "盾 Lv.117"
+      },
+      {
+        "room": 117,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 216,
+        "name": "盾 Lv.118"
+      },
+      {
+        "room": 118,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 217,
+        "name": "盾 Lv.119"
+      },
+      {
+        "room": 119,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 219,
+        "name": "盾 Lv.120"
+      },
+      {
+        "room": 120,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 221,
+        "name": "盾 Lv.121"
+      },
+      {
+        "room": 121,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 223,
+        "name": "盾 Lv.122"
+      },
+      {
+        "room": 122,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 225,
+        "name": "盾 Lv.123"
+      },
+      {
+        "room": 123,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.8,
+        "dmg": 226,
+        "name": "盾 Lv.124"
+      },
+      {
+        "room": 124,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 228,
+        "name": "盾 Lv.125"
+      },
+      {
+        "room": 125,
+        "cd": 9,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 230,
+        "name": "盾 Lv.126"
+      },
+      {
+        "room": 126,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 232,
+        "name": "盾 Lv.127"
+      },
+      {
+        "room": 127,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 234,
+        "name": "盾 Lv.128"
+      },
+      {
+        "room": 128,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 235,
+        "name": "盾 Lv.129"
+      },
+      {
+        "room": 129,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 3.9,
+        "dmg": 237,
+        "name": "盾 Lv.130"
+      },
+      {
+        "room": 130,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 239,
+        "name": "盾 Lv.131"
+      },
+      {
+        "room": 131,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 241,
+        "name": "盾 Lv.132"
+      },
+      {
+        "room": 132,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 243,
+        "name": "盾 Lv.133"
+      },
+      {
+        "room": 133,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 244,
+        "name": "盾 Lv.134"
+      },
+      {
+        "room": 134,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 246,
+        "name": "盾 Lv.135"
+      },
+      {
+        "room": 135,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 248,
+        "name": "盾 Lv.136"
+      },
+      {
+        "room": 136,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4,
+        "dmg": 250,
+        "name": "盾 Lv.137"
+      },
+      {
+        "room": 137,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 252,
+        "name": "盾 Lv.138"
+      },
+      {
+        "room": 138,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 253,
+        "name": "盾 Lv.139"
+      },
+      {
+        "room": 139,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 255,
+        "name": "盾 Lv.140"
+      },
+      {
+        "room": 140,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 257,
+        "name": "盾 Lv.141"
+      },
+      {
+        "room": 141,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 259,
+        "name": "盾 Lv.142"
+      },
+      {
+        "room": 142,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 261,
+        "name": "盾 Lv.143"
+      },
+      {
+        "room": 143,
+        "cd": 8,
+        "kind": "melee",
+        "rng": 4.1,
+        "dmg": 262,
+        "name": "盾 Lv.144"
+      },
+      {
+        "room": 144,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 264,
+        "name": "盾 Lv.145"
+      },
+      {
+        "room": 145,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 266,
+        "name": "盾 Lv.146"
+      },
+      {
+        "room": 146,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 268,
+        "name": "盾 Lv.147"
+      },
+      {
+        "room": 147,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 270,
+        "name": "盾 Lv.148"
+      },
+      {
+        "room": 148,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 271,
+        "name": "盾 Lv.149"
+      },
+      {
+        "room": 149,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.2,
+        "dmg": 273,
+        "name": "盾 Lv.150"
+      },
+      {
+        "room": 150,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.3,
+        "dmg": 275,
+        "name": "盾 Lv.151"
+      },
+      {
+        "room": 151,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.3,
+        "dmg": 277,
+        "name": "盾 Lv.152"
+      },
+      {
+        "room": 152,
+        "cd": 7,
+        "kind": "melee",
+        "rng": 4.3,
+        "dmg": 279,
+        "name": "盾 Lv.153"
+      }
+    ]
+  },
+  "enemies": {
+    "slime": {
+      "hp": 75,
+      "spd": 0.8,
+      "dmg": 8,
+      "sz": 0.55,
+      "ar": 0.8,
+      "ac": 60,
+      "sc": 25,
+      "rng": false,
+      "col": "#4CAF50"
+    },
+    "skel": {
+      "hp": 80,
+      "spd": 1,
+      "dmg": 12,
+      "sz": 0.65,
+      "ar": 1.2,
+      "ac": 50,
+      "sc": 50,
+      "rng": false,
+      "col": "#FF9800"
+    },
+    "ghost": {
+      "hp": 85,
+      "spd": 1.2,
+      "dmg": 10,
+      "sz": 0.5,
+      "ar": 7,
+      "ac": 45,
+      "sc": 40,
+      "rng": true,
+      "col": "#9C27B0"
+    },
+    "elite": {
+      "hp": 88,
+      "spd": 1.1,
+      "dmg": 15,
+      "sz": 0.85,
+      "ar": 1.6,
+      "ac": 55,
+      "sc": 80,
+      "rng": false,
+      "col": "#F44336"
+    },
+    "hero290083": {
+      "hp": 80,
+      "spd": 1,
+      "dmg": 12,
+      "sz": 0.65,
+      "ar": 1.2,
+      "ac": 50,
+      "sc": 50,
+      "rng": false,
+      "col": "#E91E63"
+    },
+    "hero290087": {
+      "hp": 80,
+      "spd": 1,
+      "dmg": 12,
+      "sz": 0.65,
+      "ar": 1.2,
+      "ac": 50,
+      "sc": 50,
+      "rng": false,
+      "col": "#9C27B0"
+    },
+    "hero290089": {
+      "hp": 80,
+      "spd": 1,
+      "dmg": 12,
+      "sz": 0.65,
+      "ar": 1.2,
+      "ac": 50,
+      "sc": 50,
+      "rng": false,
+      "col": "#673AB7"
+    },
+    "hero290092": {
+      "hp": 85,
+      "spd": 1.2,
+      "dmg": 10,
+      "sz": 0.5,
+      "ar": 7,
+      "ac": 45,
+      "sc": 40,
+      "rng": true,
+      "col": "#00BCD4"
+    },
+    "hero290093": {
+      "hp": 85,
+      "spd": 1.2,
+      "dmg": 10,
+      "sz": 0.5,
+      "ar": 7,
+      "ac": 45,
+      "sc": 40,
+      "rng": true,
+      "col": "#009688"
+    },
+    "hero290095": {
+      "hp": 85,
+      "spd": 1.2,
+      "dmg": 10,
+      "sz": 0.5,
+      "ar": 7,
+      "ac": 45,
+      "sc": 40,
+      "rng": true,
+      "col": "#FF5722"
+    },
+    "hero290096": {
+      "hp": 88,
+      "spd": 1.1,
+      "dmg": 15,
+      "sz": 0.85,
+      "ar": 1.6,
+      "ac": 55,
+      "sc": 80,
+      "rng": false,
+      "col": "#795548"
+    },
+    "hero290101": {
+      "hp": 88,
+      "spd": 1.1,
+      "dmg": 15,
+      "sz": 0.85,
+      "ar": 1.6,
+      "ac": 55,
+      "sc": 80,
+      "rng": false,
+      "col": "#607D8B"
+    },
+    "hero290105": {
+      "hp": 75,
+      "spd": 0.8,
+      "dmg": 8,
+      "sz": 0.55,
+      "ar": 0.8,
+      "ac": 60,
+      "sc": 25,
+      "rng": false,
+      "col": "#CDDC39"
+    }
+  },
+  "rooms": [
+    {
+      "name": "第1关",
+      "doorScore": 300,
+      "bossScore": 0,
+      "spawnInt": 120,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1,
+      "enemyTypes": [
+        "slime",
+        "skel",
+        "hero290083"
+      ]
+    },
+    {
+      "name": "第2关",
+      "doorScore": 325,
+      "bossScore": 0,
+      "spawnInt": 119,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.03,
+      "enemyTypes": [
+        "skel",
+        "hero290083",
+        "hero290105"
+      ]
+    },
+    {
+      "name": "第3关",
+      "doorScore": 630,
+      "bossScore": 420,
+      "spawnInt": 119,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.07,
+      "enemyTypes": [
+        "hero290083",
+        "hero290105",
+        "hero290087",
+        "slime"
+      ]
+    },
+    {
+      "name": "第4关",
+      "doorScore": 375,
+      "bossScore": 0,
+      "spawnInt": 118,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.1,
+      "enemyTypes": [
+        "hero290105",
+        "hero290087",
+        "slime"
+      ]
+    },
+    {
+      "name": "第5关",
+      "doorScore": 400,
+      "bossScore": 0,
+      "spawnInt": 118,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.14,
+      "enemyTypes": [
+        "hero290087",
+        "slime",
+        "skel"
+      ]
+    },
+    {
+      "name": "第6关",
+      "doorScore": 765,
+      "bossScore": 510,
+      "spawnInt": 117,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.18,
+      "enemyTypes": [
+        "slime",
+        "skel",
+        "hero290083",
+        "hero290105"
+      ]
+    },
+    {
+      "name": "第7关",
+      "doorScore": 450,
+      "bossScore": 0,
+      "spawnInt": 117,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.21,
+      "enemyTypes": [
+        "skel",
+        "hero290083",
+        "hero290105"
+      ]
+    },
+    {
+      "name": "第8关",
+      "doorScore": 475,
+      "bossScore": 0,
+      "spawnInt": 116,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.25,
+      "enemyTypes": [
+        "hero290083",
+        "hero290105",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第9关",
+      "doorScore": 900,
+      "bossScore": 600,
+      "spawnInt": 116,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.28,
+      "enemyTypes": [
+        "hero290105",
+        "hero290087",
+        "slime",
+        "skel"
+      ]
+    },
+    {
+      "name": "第10关",
+      "doorScore": 525,
+      "bossScore": 0,
+      "spawnInt": 115,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.31,
+      "enemyTypes": [
+        "hero290087",
+        "slime",
+        "skel"
+      ]
+    },
+    {
+      "name": "第11关",
+      "doorScore": 550,
+      "bossScore": 0,
+      "spawnInt": 115,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.35,
+      "enemyTypes": [
+        "slime",
+        "skel",
+        "hero290083"
+      ]
+    },
+    {
+      "name": "第12关",
+      "doorScore": 1035,
+      "bossScore": 690,
+      "spawnInt": 114,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.39,
+      "enemyTypes": [
+        "skel",
+        "hero290083",
+        "hero290105",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第13关",
+      "doorScore": 600,
+      "bossScore": 0,
+      "spawnInt": 113,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.42,
+      "enemyTypes": [
+        "hero290083",
+        "hero290105",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第14关",
+      "doorScore": 625,
+      "bossScore": 0,
+      "spawnInt": 113,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.46,
+      "enemyTypes": [
+        "hero290105",
+        "hero290087",
+        "slime"
+      ]
+    },
+    {
+      "name": "第15关",
+      "doorScore": 1170,
+      "bossScore": 780,
+      "spawnInt": 112,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.49,
+      "enemyTypes": [
+        "hero290087",
+        "slime",
+        "skel",
+        "hero290083"
+      ]
+    },
+    {
+      "name": "第16关",
+      "doorScore": 675,
+      "bossScore": 0,
+      "spawnInt": 112,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.52,
+      "enemyTypes": [
+        "slime",
+        "skel",
+        "hero290083"
+      ]
+    },
+    {
+      "name": "第17关",
+      "doorScore": 700,
+      "bossScore": 0,
+      "spawnInt": 111,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.56,
+      "enemyTypes": [
+        "skel",
+        "hero290083",
+        "hero290105"
+      ]
+    },
+    {
+      "name": "第18关",
+      "doorScore": 1305,
+      "bossScore": 870,
+      "spawnInt": 111,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.6,
+      "enemyTypes": [
+        "hero290083",
+        "hero290105",
+        "hero290087",
+        "slime"
+      ]
+    },
+    {
+      "name": "第19关",
+      "doorScore": 750,
+      "bossScore": 0,
+      "spawnInt": 110,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.63,
+      "enemyTypes": [
+        "hero290105",
+        "hero290087",
+        "slime"
+      ]
+    },
+    {
+      "name": "第20关",
+      "doorScore": 775,
+      "bossScore": 0,
+      "spawnInt": 110,
+      "spawnMin": 2,
+      "spawnMax": 4,
+      "diff": 1.67,
+      "enemyTypes": [
+        "hero290087",
+        "slime",
+        "skel"
+      ]
+    },
+    {
+      "name": "第21关",
+      "doorScore": 1440,
+      "bossScore": 960,
+      "spawnInt": 109,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.7,
+      "enemyTypes": [
+        "slime",
+        "skel",
+        "hero290083",
+        "hero290105"
+      ]
+    },
+    {
+      "name": "第22关",
+      "doorScore": 825,
+      "bossScore": 0,
+      "spawnInt": 108,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.74,
+      "enemyTypes": [
+        "skel",
+        "hero290083",
+        "hero290105"
+      ]
+    },
+    {
+      "name": "第23关",
+      "doorScore": 850,
+      "bossScore": 0,
+      "spawnInt": 108,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.77,
+      "enemyTypes": [
+        "hero290083",
+        "hero290105",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第24关",
+      "doorScore": 1575,
+      "bossScore": 1050,
+      "spawnInt": 107,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.81,
+      "enemyTypes": [
+        "hero290105",
+        "hero290087",
+        "slime",
+        "skel"
+      ]
+    },
+    {
+      "name": "第25关",
+      "doorScore": 900,
+      "bossScore": 0,
+      "spawnInt": 107,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.84,
+      "enemyTypes": [
+        "hero290087",
+        "slime",
+        "skel"
+      ]
+    },
+    {
+      "name": "第26关",
+      "doorScore": 925,
+      "bossScore": 0,
+      "spawnInt": 106,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.88,
+      "enemyTypes": [
+        "slime",
+        "skel",
+        "hero290083"
+      ]
+    },
+    {
+      "name": "第27关",
+      "doorScore": 1710,
+      "bossScore": 1140,
+      "spawnInt": 106,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.91,
+      "enemyTypes": [
+        "skel",
+        "hero290083",
+        "hero290105",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第28关",
+      "doorScore": 975,
+      "bossScore": 0,
+      "spawnInt": 105,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.95,
+      "enemyTypes": [
+        "hero290083",
+        "hero290105",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第29关",
+      "doorScore": 1000,
+      "bossScore": 0,
+      "spawnInt": 105,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 1.98,
+      "enemyTypes": [
+        "hero290105",
+        "hero290087",
+        "slime"
+      ]
+    },
+    {
+      "name": "第30关",
+      "doorScore": 1845,
+      "bossScore": 1230,
+      "spawnInt": 104,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 2.02,
+      "enemyTypes": [
+        "hero290087",
+        "slime",
+        "skel",
+        "hero290083"
+      ]
+    },
+    {
+      "name": "第31关",
+      "doorScore": 1050,
+      "bossScore": 0,
+      "spawnInt": 104,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 2.05,
+      "enemyTypes": [
+        "slime",
+        "skel",
+        "hero290083"
+      ]
+    },
+    {
+      "name": "第32关",
+      "doorScore": 1075,
+      "bossScore": 0,
+      "spawnInt": 103,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 2.08,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第33关",
+      "doorScore": 1980,
+      "bossScore": 1320,
+      "spawnInt": 102,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 2.12,
+      "enemyTypes": [
+        "elite",
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第34关",
+      "doorScore": 1125,
+      "bossScore": 0,
+      "spawnInt": 102,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 2.16,
+      "enemyTypes": [
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第35关",
+      "doorScore": 1150,
+      "bossScore": 0,
+      "spawnInt": 101,
+      "spawnMin": 2,
+      "spawnMax": 5,
+      "diff": 2.19,
+      "enemyTypes": [
+        "hero290089",
+        "hero290092",
+        "skel"
+      ]
+    },
+    {
+      "name": "第36关",
+      "doorScore": 2115,
+      "bossScore": 1410,
+      "spawnInt": 101,
+      "spawnMin": 3,
+      "spawnMax": 5,
+      "diff": 2.23,
+      "enemyTypes": [
+        "hero290092",
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第37关",
+      "doorScore": 1200,
+      "bossScore": 0,
+      "spawnInt": 100,
+      "spawnMin": 3,
+      "spawnMax": 5,
+      "diff": 2.26,
+      "enemyTypes": [
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第38关",
+      "doorScore": 1225,
+      "bossScore": 0,
+      "spawnInt": 100,
+      "spawnMin": 3,
+      "spawnMax": 5,
+      "diff": 2.29,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第39关",
+      "doorScore": 2250,
+      "bossScore": 1500,
+      "spawnInt": 99,
+      "spawnMin": 3,
+      "spawnMax": 5,
+      "diff": 2.33,
+      "enemyTypes": [
+        "elite",
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第40关",
+      "doorScore": 1275,
+      "bossScore": 0,
+      "spawnInt": 99,
+      "spawnMin": 3,
+      "spawnMax": 5,
+      "diff": 2.37,
+      "enemyTypes": [
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第41关",
+      "doorScore": 1300,
+      "bossScore": 0,
+      "spawnInt": 98,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.4,
+      "enemyTypes": [
+        "hero290089",
+        "hero290092",
+        "skel"
+      ]
+    },
+    {
+      "name": "第42关",
+      "doorScore": 2385,
+      "bossScore": 1590,
+      "spawnInt": 97,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.44,
+      "enemyTypes": [
+        "hero290092",
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第43关",
+      "doorScore": 1350,
+      "bossScore": 0,
+      "spawnInt": 97,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.47,
+      "enemyTypes": [
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第44关",
+      "doorScore": 1375,
+      "bossScore": 0,
+      "spawnInt": 96,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.5,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第45关",
+      "doorScore": 2520,
+      "bossScore": 1680,
+      "spawnInt": 96,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.54,
+      "enemyTypes": [
+        "elite",
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第46关",
+      "doorScore": 1425,
+      "bossScore": 0,
+      "spawnInt": 95,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.58,
+      "enemyTypes": [
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第47关",
+      "doorScore": 1450,
+      "bossScore": 0,
+      "spawnInt": 95,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.61,
+      "enemyTypes": [
+        "hero290089",
+        "hero290092",
+        "skel"
+      ]
+    },
+    {
+      "name": "第48关",
+      "doorScore": 2655,
+      "bossScore": 1770,
+      "spawnInt": 94,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.65,
+      "enemyTypes": [
+        "hero290092",
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第49关",
+      "doorScore": 1500,
+      "bossScore": 0,
+      "spawnInt": 94,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.68,
+      "enemyTypes": [
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第50关",
+      "doorScore": 1525,
+      "bossScore": 0,
+      "spawnInt": 93,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.71,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第51关",
+      "doorScore": 2790,
+      "bossScore": 1860,
+      "spawnInt": 93,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.75,
+      "enemyTypes": [
+        "elite",
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第52关",
+      "doorScore": 1575,
+      "bossScore": 0,
+      "spawnInt": 92,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.79,
+      "enemyTypes": [
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第53关",
+      "doorScore": 1600,
+      "bossScore": 0,
+      "spawnInt": 91,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.82,
+      "enemyTypes": [
+        "hero290089",
+        "hero290092",
+        "skel"
+      ]
+    },
+    {
+      "name": "第54关",
+      "doorScore": 2925,
+      "bossScore": 1950,
+      "spawnInt": 91,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.86,
+      "enemyTypes": [
+        "hero290092",
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第55关",
+      "doorScore": 1650,
+      "bossScore": 0,
+      "spawnInt": 90,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.89,
+      "enemyTypes": [
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第56关",
+      "doorScore": 1675,
+      "bossScore": 0,
+      "spawnInt": 90,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.93,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第57关",
+      "doorScore": 3060,
+      "bossScore": 2040,
+      "spawnInt": 89,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 2.96,
+      "enemyTypes": [
+        "elite",
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第58关",
+      "doorScore": 1725,
+      "bossScore": 0,
+      "spawnInt": 89,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 3,
+      "enemyTypes": [
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第59关",
+      "doorScore": 1750,
+      "bossScore": 0,
+      "spawnInt": 88,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 3.03,
+      "enemyTypes": [
+        "hero290089",
+        "hero290092",
+        "skel"
+      ]
+    },
+    {
+      "name": "第60关",
+      "doorScore": 3195,
+      "bossScore": 2130,
+      "spawnInt": 88,
+      "spawnMin": 3,
+      "spawnMax": 6,
+      "diff": 3.07,
+      "enemyTypes": [
+        "hero290092",
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第61关",
+      "doorScore": 1800,
+      "bossScore": 0,
+      "spawnInt": 87,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.1,
+      "enemyTypes": [
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第62关",
+      "doorScore": 1825,
+      "bossScore": 0,
+      "spawnInt": 86,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.14,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第63关",
+      "doorScore": 3330,
+      "bossScore": 2220,
+      "spawnInt": 86,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.17,
+      "enemyTypes": [
+        "elite",
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第64关",
+      "doorScore": 1875,
+      "bossScore": 0,
+      "spawnInt": 85,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.21,
+      "enemyTypes": [
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第65关",
+      "doorScore": 1900,
+      "bossScore": 0,
+      "spawnInt": 85,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.24,
+      "enemyTypes": [
+        "hero290089",
+        "hero290092",
+        "skel"
+      ]
+    },
+    {
+      "name": "第66关",
+      "doorScore": 3465,
+      "bossScore": 2310,
+      "spawnInt": 84,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.28,
+      "enemyTypes": [
+        "hero290092",
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第67关",
+      "doorScore": 1950,
+      "bossScore": 0,
+      "spawnInt": 84,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.31,
+      "enemyTypes": [
+        "skel",
+        "ghost",
+        "elite"
+      ]
+    },
+    {
+      "name": "第68关",
+      "doorScore": 1975,
+      "bossScore": 0,
+      "spawnInt": 83,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.35,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290087"
+      ]
+    },
+    {
+      "name": "第69关",
+      "doorScore": 3600,
+      "bossScore": 2400,
+      "spawnInt": 83,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.38,
+      "enemyTypes": [
+        "elite",
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第70关",
+      "doorScore": 2025,
+      "bossScore": 0,
+      "spawnInt": 82,
+      "spawnMin": 3,
+      "spawnMax": 7,
+      "diff": 3.42,
+      "enemyTypes": [
+        "hero290087",
+        "hero290089",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第71关",
+      "doorScore": 2050,
+      "bossScore": 0,
+      "spawnInt": 82,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.45,
+      "enemyTypes": [
+        "hero290089",
+        "hero290092",
+        "skel"
+      ]
+    },
+    {
+      "name": "第72关",
+      "doorScore": 3735,
+      "bossScore": 2490,
+      "spawnInt": 81,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.49,
+      "enemyTypes": [
+        "hero290096",
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第73关",
+      "doorScore": 2100,
+      "bossScore": 0,
+      "spawnInt": 80,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.52,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第74关",
+      "doorScore": 2125,
+      "bossScore": 0,
+      "spawnInt": 80,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.56,
+      "enemyTypes": [
+        "elite",
+        "hero290092",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第75关",
+      "doorScore": 3870,
+      "bossScore": 2580,
+      "spawnInt": 79,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.59,
+      "enemyTypes": [
+        "hero290092",
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第76关",
+      "doorScore": 2175,
+      "bossScore": 0,
+      "spawnInt": 79,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.63,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第77关",
+      "doorScore": 2200,
+      "bossScore": 0,
+      "spawnInt": 78,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.66,
+      "enemyTypes": [
+        "hero290095",
+        "hero290096",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第78关",
+      "doorScore": 4005,
+      "bossScore": 2670,
+      "spawnInt": 78,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.7,
+      "enemyTypes": [
+        "hero290096",
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第79关",
+      "doorScore": 2250,
+      "bossScore": 0,
+      "spawnInt": 77,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.73,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第80关",
+      "doorScore": 2275,
+      "bossScore": 0,
+      "spawnInt": 77,
+      "spawnMin": 4,
+      "spawnMax": 7,
+      "diff": 3.77,
+      "enemyTypes": [
+        "elite",
+        "hero290092",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第81关",
+      "doorScore": 4140,
+      "bossScore": 2760,
+      "spawnInt": 76,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 3.8,
+      "enemyTypes": [
+        "hero290092",
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第82关",
+      "doorScore": 2325,
+      "bossScore": 0,
+      "spawnInt": 75,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 3.84,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第83关",
+      "doorScore": 2350,
+      "bossScore": 0,
+      "spawnInt": 75,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 3.87,
+      "enemyTypes": [
+        "hero290095",
+        "hero290096",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第84关",
+      "doorScore": 4275,
+      "bossScore": 2850,
+      "spawnInt": 74,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 3.91,
+      "enemyTypes": [
+        "hero290096",
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第85关",
+      "doorScore": 2400,
+      "bossScore": 0,
+      "spawnInt": 74,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 3.94,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第86关",
+      "doorScore": 2425,
+      "bossScore": 0,
+      "spawnInt": 73,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 3.98,
+      "enemyTypes": [
+        "elite",
+        "hero290092",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第87关",
+      "doorScore": 4410,
+      "bossScore": 2940,
+      "spawnInt": 73,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.01,
+      "enemyTypes": [
+        "hero290092",
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第88关",
+      "doorScore": 2475,
+      "bossScore": 0,
+      "spawnInt": 72,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.04,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第89关",
+      "doorScore": 2500,
+      "bossScore": 0,
+      "spawnInt": 72,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.08,
+      "enemyTypes": [
+        "hero290095",
+        "hero290096",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第90关",
+      "doorScore": 4545,
+      "bossScore": 3030,
+      "spawnInt": 71,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.12,
+      "enemyTypes": [
+        "hero290096",
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第91关",
+      "doorScore": 2550,
+      "bossScore": 0,
+      "spawnInt": 71,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.15,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第92关",
+      "doorScore": 2575,
+      "bossScore": 0,
+      "spawnInt": 70,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.19,
+      "enemyTypes": [
+        "elite",
+        "hero290092",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第93关",
+      "doorScore": 4680,
+      "bossScore": 3120,
+      "spawnInt": 69,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.22,
+      "enemyTypes": [
+        "hero290092",
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第94关",
+      "doorScore": 2625,
+      "bossScore": 0,
+      "spawnInt": 69,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.26,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第95关",
+      "doorScore": 2650,
+      "bossScore": 0,
+      "spawnInt": 68,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.29,
+      "enemyTypes": [
+        "hero290095",
+        "hero290096",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第96关",
+      "doorScore": 4815,
+      "bossScore": 3210,
+      "spawnInt": 68,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.33,
+      "enemyTypes": [
+        "hero290096",
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第97关",
+      "doorScore": 2700,
+      "bossScore": 0,
+      "spawnInt": 67,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.36,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第98关",
+      "doorScore": 2725,
+      "bossScore": 0,
+      "spawnInt": 67,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.4,
+      "enemyTypes": [
+        "elite",
+        "hero290092",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第99关",
+      "doorScore": 4950,
+      "bossScore": 3300,
+      "spawnInt": 66,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.43,
+      "enemyTypes": [
+        "hero290092",
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第100关",
+      "doorScore": 2775,
+      "bossScore": 0,
+      "spawnInt": 66,
+      "spawnMin": 4,
+      "spawnMax": 8,
+      "diff": 4.46,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第101关",
+      "doorScore": 2800,
+      "bossScore": 0,
+      "spawnInt": 65,
+      "spawnMin": 4,
+      "spawnMax": 9,
+      "diff": 4.5,
+      "enemyTypes": [
+        "hero290095",
+        "hero290096",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第102关",
+      "doorScore": 5085,
+      "bossScore": 3390,
+      "spawnInt": 64,
+      "spawnMin": 4,
+      "spawnMax": 9,
+      "diff": 4.54,
+      "enemyTypes": [
+        "hero290096",
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第103关",
+      "doorScore": 2850,
+      "bossScore": 0,
+      "spawnInt": 64,
+      "spawnMin": 4,
+      "spawnMax": 9,
+      "diff": 4.57,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第104关",
+      "doorScore": 2875,
+      "bossScore": 0,
+      "spawnInt": 63,
+      "spawnMin": 4,
+      "spawnMax": 9,
+      "diff": 4.61,
+      "enemyTypes": [
+        "elite",
+        "hero290092",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第105关",
+      "doorScore": 5220,
+      "bossScore": 3480,
+      "spawnInt": 63,
+      "spawnMin": 4,
+      "spawnMax": 9,
+      "diff": 4.64,
+      "enemyTypes": [
+        "hero290092",
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第106关",
+      "doorScore": 2925,
+      "bossScore": 0,
+      "spawnInt": 62,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.68,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第107关",
+      "doorScore": 2950,
+      "bossScore": 0,
+      "spawnInt": 62,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.71,
+      "enemyTypes": [
+        "hero290095",
+        "hero290096",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第108关",
+      "doorScore": 5355,
+      "bossScore": 3570,
+      "spawnInt": 61,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.75,
+      "enemyTypes": [
+        "hero290096",
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第109关",
+      "doorScore": 3000,
+      "bossScore": 0,
+      "spawnInt": 61,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.78,
+      "enemyTypes": [
+        "ghost",
+        "elite",
+        "hero290092"
+      ]
+    },
+    {
+      "name": "第110关",
+      "doorScore": 3025,
+      "bossScore": 0,
+      "spawnInt": 60,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.82,
+      "enemyTypes": [
+        "elite",
+        "hero290092",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第111关",
+      "doorScore": 5490,
+      "bossScore": 3660,
+      "spawnInt": 59,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.85,
+      "enemyTypes": [
+        "hero290092",
+        "hero290093",
+        "hero290095",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第112关",
+      "doorScore": 3075,
+      "bossScore": 0,
+      "spawnInt": 59,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.88,
+      "enemyTypes": [
+        "skel",
+        "elite",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第113关",
+      "doorScore": 3100,
+      "bossScore": 0,
+      "spawnInt": 58,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.92,
+      "enemyTypes": [
+        "elite",
+        "hero290096",
+        "hero290101"
+      ]
+    },
+    {
+      "name": "第114关",
+      "doorScore": 5625,
+      "bossScore": 3750,
+      "spawnInt": 58,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.96,
+      "enemyTypes": [
+        "hero290096",
+        "hero290101",
+        "ghost",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第115关",
+      "doorScore": 3150,
+      "bossScore": 0,
+      "spawnInt": 57,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 4.99,
+      "enemyTypes": [
+        "hero290101",
+        "ghost",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第116关",
+      "doorScore": 3175,
+      "bossScore": 0,
+      "spawnInt": 57,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 5.03,
+      "enemyTypes": [
+        "ghost",
+        "hero290093",
+        "hero290095"
+      ]
+    },
+    {
+      "name": "第117关",
+      "doorScore": 5760,
+      "bossScore": 3840,
+      "spawnInt": 56,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 5.06,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "skel",
+        "elite"
+      ]
+    },
+    {
+      "name": "第118关",
+      "doorScore": 3225,
+      "bossScore": 0,
+      "spawnInt": 56,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 5.1,
+      "enemyTypes": [
+        "hero290095",
+        "skel",
+        "elite"
+      ]
+    },
+    {
+      "name": "第119关",
+      "doorScore": 3250,
+      "bossScore": 0,
+      "spawnInt": 55,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 5.13,
+      "enemyTypes": [
+        "skel",
+        "elite",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第120关",
+      "doorScore": 5895,
+      "bossScore": 3930,
+      "spawnInt": 55,
+      "spawnMin": 5,
+      "spawnMax": 9,
+      "diff": 5.17,
+      "enemyTypes": [
+        "elite",
+        "hero290096",
+        "hero290101",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第121关",
+      "doorScore": 3300,
+      "bossScore": 0,
+      "spawnInt": 54,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.2,
+      "enemyTypes": [
+        "hero290096",
+        "hero290101",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第122关",
+      "doorScore": 3325,
+      "bossScore": 0,
+      "spawnInt": 53,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.24,
+      "enemyTypes": [
+        "hero290101",
+        "ghost",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第123关",
+      "doorScore": 6030,
+      "bossScore": 4020,
+      "spawnInt": 53,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.27,
+      "enemyTypes": [
+        "ghost",
+        "hero290093",
+        "hero290095",
+        "skel"
+      ]
+    },
+    {
+      "name": "第124关",
+      "doorScore": 3375,
+      "bossScore": 0,
+      "spawnInt": 52,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.31,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "skel"
+      ]
+    },
+    {
+      "name": "第125关",
+      "doorScore": 3400,
+      "bossScore": 0,
+      "spawnInt": 52,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.34,
+      "enemyTypes": [
+        "hero290095",
+        "skel",
+        "elite"
+      ]
+    },
+    {
+      "name": "第126关",
+      "doorScore": 6165,
+      "bossScore": 4110,
+      "spawnInt": 51,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.38,
+      "enemyTypes": [
+        "skel",
+        "elite",
+        "hero290096",
+        "hero290101"
+      ]
+    },
+    {
+      "name": "第127关",
+      "doorScore": 3450,
+      "bossScore": 0,
+      "spawnInt": 51,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.41,
+      "enemyTypes": [
+        "elite",
+        "hero290096",
+        "hero290101"
+      ]
+    },
+    {
+      "name": "第128关",
+      "doorScore": 3475,
+      "bossScore": 0,
+      "spawnInt": 50,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.45,
+      "enemyTypes": [
+        "hero290096",
+        "hero290101",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第129关",
+      "doorScore": 6300,
+      "bossScore": 4200,
+      "spawnInt": 50,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.48,
+      "enemyTypes": [
+        "hero290101",
+        "ghost",
+        "hero290093",
+        "hero290095"
+      ]
+    },
+    {
+      "name": "第130关",
+      "doorScore": 3525,
+      "bossScore": 0,
+      "spawnInt": 49,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.52,
+      "enemyTypes": [
+        "ghost",
+        "hero290093",
+        "hero290095"
+      ]
+    },
+    {
+      "name": "第131关",
+      "doorScore": 3550,
+      "bossScore": 0,
+      "spawnInt": 49,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.55,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "skel"
+      ]
+    },
+    {
+      "name": "第132关",
+      "doorScore": 6435,
+      "bossScore": 4290,
+      "spawnInt": 48,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.59,
+      "enemyTypes": [
+        "hero290095",
+        "skel",
+        "elite",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第133关",
+      "doorScore": 3600,
+      "bossScore": 0,
+      "spawnInt": 47,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.62,
+      "enemyTypes": [
+        "skel",
+        "elite",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第134关",
+      "doorScore": 3625,
+      "bossScore": 0,
+      "spawnInt": 47,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.66,
+      "enemyTypes": [
+        "elite",
+        "hero290096",
+        "hero290101"
+      ]
+    },
+    {
+      "name": "第135关",
+      "doorScore": 6570,
+      "bossScore": 4380,
+      "spawnInt": 46,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.69,
+      "enemyTypes": [
+        "hero290096",
+        "hero290101",
+        "ghost",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第136关",
+      "doorScore": 3675,
+      "bossScore": 0,
+      "spawnInt": 46,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.73,
+      "enemyTypes": [
+        "hero290101",
+        "ghost",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第137关",
+      "doorScore": 3700,
+      "bossScore": 0,
+      "spawnInt": 45,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.76,
+      "enemyTypes": [
+        "ghost",
+        "hero290093",
+        "hero290095"
+      ]
+    },
+    {
+      "name": "第138关",
+      "doorScore": 6705,
+      "bossScore": 4470,
+      "spawnInt": 45,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.8,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "skel",
+        "elite"
+      ]
+    },
+    {
+      "name": "第139关",
+      "doorScore": 3750,
+      "bossScore": 0,
+      "spawnInt": 44,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.83,
+      "enemyTypes": [
+        "hero290095",
+        "skel",
+        "elite"
+      ]
+    },
+    {
+      "name": "第140关",
+      "doorScore": 3775,
+      "bossScore": 0,
+      "spawnInt": 44,
+      "spawnMin": 5,
+      "spawnMax": 10,
+      "diff": 5.87,
+      "enemyTypes": [
+        "skel",
+        "elite",
+        "hero290096"
+      ]
+    },
+    {
+      "name": "第141关",
+      "doorScore": 6840,
+      "bossScore": 4560,
+      "spawnInt": 43,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 5.9,
+      "enemyTypes": [
+        "elite",
+        "hero290096",
+        "hero290101",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第142关",
+      "doorScore": 3825,
+      "bossScore": 0,
+      "spawnInt": 42,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 5.94,
+      "enemyTypes": [
+        "hero290096",
+        "hero290101",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第143关",
+      "doorScore": 3850,
+      "bossScore": 0,
+      "spawnInt": 42,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 5.97,
+      "enemyTypes": [
+        "hero290101",
+        "ghost",
+        "hero290093"
+      ]
+    },
+    {
+      "name": "第144关",
+      "doorScore": 6975,
+      "bossScore": 4650,
+      "spawnInt": 41,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.01,
+      "enemyTypes": [
+        "ghost",
+        "hero290093",
+        "hero290095",
+        "skel"
+      ]
+    },
+    {
+      "name": "第145关",
+      "doorScore": 3900,
+      "bossScore": 0,
+      "spawnInt": 41,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.04,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "skel"
+      ]
+    },
+    {
+      "name": "第146关",
+      "doorScore": 3925,
+      "bossScore": 0,
+      "spawnInt": 40,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.08,
+      "enemyTypes": [
+        "hero290095",
+        "skel",
+        "elite"
+      ]
+    },
+    {
+      "name": "第147关",
+      "doorScore": 7110,
+      "bossScore": 4740,
+      "spawnInt": 40,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.11,
+      "enemyTypes": [
+        "skel",
+        "elite",
+        "hero290096",
+        "hero290101"
+      ]
+    },
+    {
+      "name": "第148关",
+      "doorScore": 3975,
+      "bossScore": 0,
+      "spawnInt": 39,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.15,
+      "enemyTypes": [
+        "elite",
+        "hero290096",
+        "hero290101"
+      ]
+    },
+    {
+      "name": "第149关",
+      "doorScore": 4000,
+      "bossScore": 0,
+      "spawnInt": 39,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.18,
+      "enemyTypes": [
+        "hero290096",
+        "hero290101",
+        "ghost"
+      ]
+    },
+    {
+      "name": "第150关",
+      "doorScore": 7245,
+      "bossScore": 4830,
+      "spawnInt": 38,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.22,
+      "enemyTypes": [
+        "hero290101",
+        "ghost",
+        "hero290093",
+        "hero290095"
+      ]
+    },
+    {
+      "name": "第151关",
+      "doorScore": 4050,
+      "bossScore": 0,
+      "spawnInt": 38,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.25,
+      "enemyTypes": [
+        "ghost",
+        "hero290093",
+        "hero290095"
+      ]
+    },
+    {
+      "name": "第152关",
+      "doorScore": 4075,
+      "bossScore": 0,
+      "spawnInt": 37,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.29,
+      "enemyTypes": [
+        "hero290093",
+        "hero290095",
+        "skel"
+      ]
+    },
+    {
+      "name": "第153关",
+      "doorScore": 7380,
+      "bossScore": 4920,
+      "spawnInt": 36,
+      "spawnMin": 6,
+      "spawnMax": 11,
+      "diff": 6.32,
+      "enemyTypes": [
+        "hero290095",
+        "skel",
+        "elite",
+        "hero290096"
+      ]
+    }
+  ],
+  "bloodPrice": [
+    {
+      "room": 0,
+      "price": 150,
+      "heal": 50
+    },
+    {
+      "room": 1,
+      "price": 158,
+      "heal": 50
+    },
+    {
+      "room": 2,
+      "price": 166,
+      "heal": 50
+    },
+    {
+      "room": 3,
+      "price": 174,
+      "heal": 50
+    },
+    {
+      "room": 4,
+      "price": 182,
+      "heal": 50
+    },
+    {
+      "room": 5,
+      "price": 190,
+      "heal": 50
+    },
+    {
+      "room": 6,
+      "price": 198,
+      "heal": 50
+    },
+    {
+      "room": 7,
+      "price": 206,
+      "heal": 50
+    },
+    {
+      "room": 8,
+      "price": 214,
+      "heal": 50
+    },
+    {
+      "room": 9,
+      "price": 222,
+      "heal": 50
+    },
+    {
+      "room": 10,
+      "price": 230,
+      "heal": 50
+    },
+    {
+      "room": 11,
+      "price": 238,
+      "heal": 50
+    },
+    {
+      "room": 12,
+      "price": 246,
+      "heal": 50
+    },
+    {
+      "room": 13,
+      "price": 254,
+      "heal": 50
+    },
+    {
+      "room": 14,
+      "price": 262,
+      "heal": 50
+    },
+    {
+      "room": 15,
+      "price": 270,
+      "heal": 50
+    },
+    {
+      "room": 16,
+      "price": 278,
+      "heal": 50
+    },
+    {
+      "room": 17,
+      "price": 286,
+      "heal": 50
+    },
+    {
+      "room": 18,
+      "price": 294,
+      "heal": 50
+    },
+    {
+      "room": 19,
+      "price": 302,
+      "heal": 50
+    },
+    {
+      "room": 20,
+      "price": 310,
+      "heal": 50
+    },
+    {
+      "room": 21,
+      "price": 318,
+      "heal": 50
+    },
+    {
+      "room": 22,
+      "price": 326,
+      "heal": 50
+    },
+    {
+      "room": 23,
+      "price": 334,
+      "heal": 50
+    },
+    {
+      "room": 24,
+      "price": 342,
+      "heal": 50
+    },
+    {
+      "room": 25,
+      "price": 350,
+      "heal": 50
+    },
+    {
+      "room": 26,
+      "price": 358,
+      "heal": 50
+    },
+    {
+      "room": 27,
+      "price": 366,
+      "heal": 50
+    },
+    {
+      "room": 28,
+      "price": 374,
+      "heal": 50
+    },
+    {
+      "room": 29,
+      "price": 382,
+      "heal": 50
+    },
+    {
+      "room": 30,
+      "price": 390,
+      "heal": 50
+    },
+    {
+      "room": 31,
+      "price": 398,
+      "heal": 50
+    },
+    {
+      "room": 32,
+      "price": 406,
+      "heal": 50
+    },
+    {
+      "room": 33,
+      "price": 414,
+      "heal": 50
+    },
+    {
+      "room": 34,
+      "price": 422,
+      "heal": 50
+    },
+    {
+      "room": 35,
+      "price": 430,
+      "heal": 50
+    },
+    {
+      "room": 36,
+      "price": 438,
+      "heal": 50
+    },
+    {
+      "room": 37,
+      "price": 446,
+      "heal": 50
+    },
+    {
+      "room": 38,
+      "price": 454,
+      "heal": 50
+    },
+    {
+      "room": 39,
+      "price": 462,
+      "heal": 50
+    },
+    {
+      "room": 40,
+      "price": 470,
+      "heal": 50
+    },
+    {
+      "room": 41,
+      "price": 478,
+      "heal": 50
+    },
+    {
+      "room": 42,
+      "price": 486,
+      "heal": 50
+    },
+    {
+      "room": 43,
+      "price": 494,
+      "heal": 50
+    },
+    {
+      "room": 44,
+      "price": 502,
+      "heal": 50
+    },
+    {
+      "room": 45,
+      "price": 510,
+      "heal": 50
+    },
+    {
+      "room": 46,
+      "price": 518,
+      "heal": 50
+    },
+    {
+      "room": 47,
+      "price": 526,
+      "heal": 50
+    },
+    {
+      "room": 48,
+      "price": 534,
+      "heal": 50
+    },
+    {
+      "room": 49,
+      "price": 542,
+      "heal": 50
+    },
+    {
+      "room": 50,
+      "price": 550,
+      "heal": 50
+    },
+    {
+      "room": 51,
+      "price": 558,
+      "heal": 50
+    },
+    {
+      "room": 52,
+      "price": 566,
+      "heal": 50
+    },
+    {
+      "room": 53,
+      "price": 574,
+      "heal": 50
+    },
+    {
+      "room": 54,
+      "price": 582,
+      "heal": 50
+    },
+    {
+      "room": 55,
+      "price": 590,
+      "heal": 50
+    },
+    {
+      "room": 56,
+      "price": 598,
+      "heal": 50
+    },
+    {
+      "room": 57,
+      "price": 606,
+      "heal": 50
+    },
+    {
+      "room": 58,
+      "price": 614,
+      "heal": 50
+    },
+    {
+      "room": 59,
+      "price": 622,
+      "heal": 50
+    },
+    {
+      "room": 60,
+      "price": 630,
+      "heal": 50
+    },
+    {
+      "room": 61,
+      "price": 638,
+      "heal": 50
+    },
+    {
+      "room": 62,
+      "price": 646,
+      "heal": 50
+    },
+    {
+      "room": 63,
+      "price": 654,
+      "heal": 50
+    },
+    {
+      "room": 64,
+      "price": 662,
+      "heal": 50
+    },
+    {
+      "room": 65,
+      "price": 670,
+      "heal": 50
+    },
+    {
+      "room": 66,
+      "price": 678,
+      "heal": 50
+    },
+    {
+      "room": 67,
+      "price": 686,
+      "heal": 50
+    },
+    {
+      "room": 68,
+      "price": 694,
+      "heal": 50
+    },
+    {
+      "room": 69,
+      "price": 702,
+      "heal": 50
+    },
+    {
+      "room": 70,
+      "price": 710,
+      "heal": 50
+    },
+    {
+      "room": 71,
+      "price": 718,
+      "heal": 50
+    },
+    {
+      "room": 72,
+      "price": 726,
+      "heal": 50
+    },
+    {
+      "room": 73,
+      "price": 734,
+      "heal": 50
+    },
+    {
+      "room": 74,
+      "price": 742,
+      "heal": 50
+    },
+    {
+      "room": 75,
+      "price": 750,
+      "heal": 50
+    },
+    {
+      "room": 76,
+      "price": 758,
+      "heal": 50
+    },
+    {
+      "room": 77,
+      "price": 766,
+      "heal": 50
+    },
+    {
+      "room": 78,
+      "price": 774,
+      "heal": 50
+    },
+    {
+      "room": 79,
+      "price": 782,
+      "heal": 50
+    },
+    {
+      "room": 80,
+      "price": 790,
+      "heal": 50
+    },
+    {
+      "room": 81,
+      "price": 798,
+      "heal": 50
+    },
+    {
+      "room": 82,
+      "price": 806,
+      "heal": 50
+    },
+    {
+      "room": 83,
+      "price": 814,
+      "heal": 50
+    },
+    {
+      "room": 84,
+      "price": 822,
+      "heal": 50
+    },
+    {
+      "room": 85,
+      "price": 830,
+      "heal": 50
+    },
+    {
+      "room": 86,
+      "price": 838,
+      "heal": 50
+    },
+    {
+      "room": 87,
+      "price": 846,
+      "heal": 50
+    },
+    {
+      "room": 88,
+      "price": 854,
+      "heal": 50
+    },
+    {
+      "room": 89,
+      "price": 862,
+      "heal": 50
+    },
+    {
+      "room": 90,
+      "price": 870,
+      "heal": 50
+    },
+    {
+      "room": 91,
+      "price": 878,
+      "heal": 50
+    },
+    {
+      "room": 92,
+      "price": 886,
+      "heal": 50
+    },
+    {
+      "room": 93,
+      "price": 894,
+      "heal": 50
+    },
+    {
+      "room": 94,
+      "price": 902,
+      "heal": 50
+    },
+    {
+      "room": 95,
+      "price": 910,
+      "heal": 50
+    },
+    {
+      "room": 96,
+      "price": 918,
+      "heal": 50
+    },
+    {
+      "room": 97,
+      "price": 926,
+      "heal": 50
+    },
+    {
+      "room": 98,
+      "price": 934,
+      "heal": 50
+    },
+    {
+      "room": 99,
+      "price": 942,
+      "heal": 50
+    },
+    {
+      "room": 100,
+      "price": 950,
+      "heal": 50
+    },
+    {
+      "room": 101,
+      "price": 958,
+      "heal": 50
+    },
+    {
+      "room": 102,
+      "price": 966,
+      "heal": 50
+    },
+    {
+      "room": 103,
+      "price": 974,
+      "heal": 50
+    },
+    {
+      "room": 104,
+      "price": 982,
+      "heal": 50
+    },
+    {
+      "room": 105,
+      "price": 990,
+      "heal": 50
+    },
+    {
+      "room": 106,
+      "price": 998,
+      "heal": 50
+    },
+    {
+      "room": 107,
+      "price": 1006,
+      "heal": 50
+    },
+    {
+      "room": 108,
+      "price": 1014,
+      "heal": 50
+    },
+    {
+      "room": 109,
+      "price": 1022,
+      "heal": 50
+    },
+    {
+      "room": 110,
+      "price": 1030,
+      "heal": 50
+    },
+    {
+      "room": 111,
+      "price": 1038,
+      "heal": 50
+    },
+    {
+      "room": 112,
+      "price": 1046,
+      "heal": 50
+    },
+    {
+      "room": 113,
+      "price": 1054,
+      "heal": 50
+    },
+    {
+      "room": 114,
+      "price": 1062,
+      "heal": 50
+    },
+    {
+      "room": 115,
+      "price": 1070,
+      "heal": 50
+    },
+    {
+      "room": 116,
+      "price": 1078,
+      "heal": 50
+    },
+    {
+      "room": 117,
+      "price": 1086,
+      "heal": 50
+    },
+    {
+      "room": 118,
+      "price": 1094,
+      "heal": 50
+    },
+    {
+      "room": 119,
+      "price": 1102,
+      "heal": 50
+    },
+    {
+      "room": 120,
+      "price": 1110,
+      "heal": 50
+    },
+    {
+      "room": 121,
+      "price": 1118,
+      "heal": 50
+    },
+    {
+      "room": 122,
+      "price": 1126,
+      "heal": 50
+    },
+    {
+      "room": 123,
+      "price": 1134,
+      "heal": 50
+    },
+    {
+      "room": 124,
+      "price": 1142,
+      "heal": 50
+    },
+    {
+      "room": 125,
+      "price": 1150,
+      "heal": 50
+    },
+    {
+      "room": 126,
+      "price": 1158,
+      "heal": 50
+    },
+    {
+      "room": 127,
+      "price": 1166,
+      "heal": 50
+    },
+    {
+      "room": 128,
+      "price": 1174,
+      "heal": 50
+    },
+    {
+      "room": 129,
+      "price": 1182,
+      "heal": 50
+    },
+    {
+      "room": 130,
+      "price": 1190,
+      "heal": 50
+    },
+    {
+      "room": 131,
+      "price": 1198,
+      "heal": 50
+    },
+    {
+      "room": 132,
+      "price": 1206,
+      "heal": 50
+    },
+    {
+      "room": 133,
+      "price": 1214,
+      "heal": 50
+    },
+    {
+      "room": 134,
+      "price": 1222,
+      "heal": 50
+    },
+    {
+      "room": 135,
+      "price": 1230,
+      "heal": 50
+    },
+    {
+      "room": 136,
+      "price": 1238,
+      "heal": 50
+    },
+    {
+      "room": 137,
+      "price": 1246,
+      "heal": 50
+    },
+    {
+      "room": 138,
+      "price": 1254,
+      "heal": 50
+    },
+    {
+      "room": 139,
+      "price": 1262,
+      "heal": 50
+    },
+    {
+      "room": 140,
+      "price": 1270,
+      "heal": 50
+    },
+    {
+      "room": 141,
+      "price": 1278,
+      "heal": 50
+    },
+    {
+      "room": 142,
+      "price": 1286,
+      "heal": 50
+    },
+    {
+      "room": 143,
+      "price": 1294,
+      "heal": 50
+    },
+    {
+      "room": 144,
+      "price": 1302,
+      "heal": 50
+    },
+    {
+      "room": 145,
+      "price": 1310,
+      "heal": 50
+    },
+    {
+      "room": 146,
+      "price": 1318,
+      "heal": 50
+    },
+    {
+      "room": 147,
+      "price": 1326,
+      "heal": 50
+    },
+    {
+      "room": 148,
+      "price": 1334,
+      "heal": 50
+    },
+    {
+      "room": 149,
+      "price": 1342,
+      "heal": 50
+    },
+    {
+      "room": 150,
+      "price": 1350,
+      "heal": 50
+    },
+    {
+      "room": 151,
+      "price": 1358,
+      "heal": 50
+    },
+    {
+      "room": 152,
+      "price": 1366,
+      "heal": 50
+    }
+  ],
+  "playerGrowth": {
+    "/*_title_*/": "玩家属性和经验值获取消耗表",
+    "/*_columns_*/": {
+      "0_等级_Level": "",
+      "1_攻击速度_AttackSpeed_px每帧": "",
+      "2_攻击力_Atk": "",
+      "3_生命值_HP": "",
+      "4_产出经验_XP每秒": "",
+      "5_升级消耗经验_XPCost": "",
+      "6_击杀对应等级怪所需时长_估算": ""
+    },
+    "data": [
+      [
+        1,
+        3.33,
+        45,
+        150,
+        16,
+        70,
+        70
+      ],
+      [
+        2,
+        3.34,
+        48,
+        180,
+        17,
+        91,
+        45.5
+      ],
+      [
+        3,
+        3.35,
+        51,
+        210,
+        18,
+        118,
+        39.333
+      ],
+      [
+        4,
+        3.36,
+        54,
+        240,
+        19,
+        154,
+        38.5
+      ],
+      [
+        5,
+        3.37,
+        57,
+        270,
+        20,
+        200,
+        40
+      ],
+      [
+        6,
+        3.38,
+        60,
+        300,
+        21,
+        260,
+        43.333
+      ],
+      [
+        7,
+        3.39,
+        63,
+        330,
+        22,
+        338,
+        48.286
+      ],
+      [
+        8,
+        3.4,
+        66,
+        360,
+        23,
+        439,
+        54.875
+      ],
+      [
+        9,
+        3.41,
+        69,
+        390,
+        24,
+        571,
+        63.444
+      ],
+      [
+        10,
+        3.42,
+        72,
+        420,
+        25,
+        742,
+        74.2
+      ],
+      [
+        11,
+        3.43,
+        75,
+        450,
+        26,
+        965,
+        87.727
+      ],
+      [
+        12,
+        3.44,
+        78,
+        480,
+        27,
+        1255,
+        104.583
+      ],
+      [
+        13,
+        3.45,
+        81,
+        510,
+        28,
+        1631,
+        125.462
+      ],
+      [
+        14,
+        3.46,
+        84,
+        540,
+        29,
+        2120,
+        151.429
+      ],
+      [
+        15,
+        3.47,
+        87,
+        570,
+        30,
+        2756,
+        183.733
+      ],
+      [
+        16,
+        3.48,
+        90,
+        600,
+        31,
+        3583,
+        223.938
+      ],
+      [
+        17,
+        3.49,
+        93,
+        630,
+        32,
+        4658,
+        274
+      ],
+      [
+        18,
+        3.5,
+        96,
+        660,
+        33,
+        6055,
+        336.389
+      ],
+      [
+        19,
+        3.51,
+        99,
+        690,
+        34,
+        7872,
+        414.316
+      ],
+      [
+        20,
+        3.52,
+        102,
+        720,
+        35,
+        10233,
+        511.65
+      ],
+      [
+        21,
+        3.53,
+        105,
+        750,
+        36,
+        13303,
+        633.476
+      ],
+      [
+        22,
+        3.54,
+        108,
+        780,
+        37,
+        17295,
+        786.136
+      ],
+      [
+        23,
+        3.55,
+        111,
+        810,
+        38,
+        22483,
+        977.522
+      ],
+      [
+        24,
+        3.56,
+        114,
+        840,
+        39,
+        29228,
+        1217.833
+      ],
+      [
+        25,
+        3.57,
+        117,
+        870,
+        40,
+        37996,
+        1519.84
+      ],
+      [
+        26,
+        3.58,
+        120,
+        900,
+        41,
+        49395,
+        1899.808
+      ],
+      [
+        27,
+        3.59,
+        123,
+        930,
+        42,
+        64213,
+        2378.259
+      ],
+      [
+        28,
+        3.6,
+        126,
+        960,
+        43,
+        83477,
+        2981.321
+      ],
+      [
+        29,
+        3.61,
+        129,
+        990,
+        44,
+        108521,
+        3742.103
+      ],
+      [
+        30,
+        3.62,
+        132,
+        1020,
+        45,
+        141077,
+        4702.567
+      ],
+      [
+        31,
+        3.63,
+        135,
+        1050,
+        46,
+        183400,
+        5916.129
+      ],
+      [
+        32,
+        3.64,
+        138,
+        1080,
+        47,
+        238420,
+        7450.625
+      ],
+      [
+        33,
+        3.65,
+        141,
+        1110,
+        48,
+        309945,
+        9392.273
+      ],
+      [
+        34,
+        3.66,
+        144,
+        1140,
+        49,
+        402929,
+        11850.853
+      ],
+      [
+        35,
+        3.67,
+        147,
+        1170,
+        50,
+        523808,
+        14965.943
+      ],
+      [
+        36,
+        3.68,
+        150,
+        1200,
+        51,
+        680950,
+        18915.278
+      ],
+      [
+        37,
+        3.69,
+        153,
+        1230,
+        52,
+        885235,
+        23925.27
+      ],
+      [
+        38,
+        3.7,
+        156,
+        1260,
+        53,
+        1150806,
+        30284.368
+      ],
+      [
+        39,
+        3.71,
+        159,
+        1290,
+        54,
+        1496048,
+        38360.205
+      ],
+      [
+        40,
+        3.72,
+        162,
+        1320,
+        55,
+        1944862,
+        48621.55
+      ],
+      [
+        41,
+        3.73,
+        165,
+        1350,
+        56,
+        2528321,
+        61666.366
+      ],
+      [
+        42,
+        3.74,
+        168,
+        1380,
+        57,
+        3286817,
+        78257.548
+      ],
+      [
+        43,
+        3.75,
+        171,
+        1410,
+        58,
+        4272862,
+        99368.884
+      ],
+      [
+        44,
+        3.76,
+        174,
+        1440,
+        59,
+        5554720,
+        126243.636
+      ],
+      [
+        45,
+        3.77,
+        177,
+        1470,
+        60,
+        7221136,
+        160469.689
+      ],
+      [
+        46,
+        3.78,
+        180,
+        1500,
+        61,
+        9387477,
+        204075.587
+      ],
+      [
+        47,
+        3.79,
+        183,
+        1530,
+        62,
+        12203720,
+        259653.617
+      ],
+      [
+        48,
+        3.8,
+        186,
+        1560,
+        63,
+        15864836,
+        330517.417
+      ],
+      [
+        49,
+        3.81,
+        189,
+        1590,
+        64,
+        20624287,
+        420903.816
+      ],
+      [
+        50,
+        3.82,
+        192,
+        1620,
+        65,
+        26811574,
+        536231.48
+      ],
+      [
+        51,
+        3.83,
+        195,
+        1650,
+        66,
+        34855046,
+        683432.275
+      ],
+      [
+        52,
+        3.84,
+        198,
+        1680,
+        67,
+        45311559,
+        871376.135
+      ],
+      [
+        53,
+        3.85,
+        201,
+        1710,
+        68,
+        58905027,
+        1111415.604
+      ],
+      [
+        54,
+        3.86,
+        204,
+        1740,
+        69,
+        76576535,
+        1418083.981
+      ],
+      [
+        55,
+        3.87,
+        207,
+        1770,
+        70,
+        99549496,
+        1809990.836
+      ],
+      [
+        56,
+        3.88,
+        210,
+        1800,
+        71,
+        129414344,
+        2310970.429
+      ],
+      [
+        57,
+        3.89,
+        213,
+        1830,
+        72,
+        168238648,
+        2951555.228
+      ],
+      [
+        58,
+        3.9,
+        216,
+        1860,
+        73,
+        218710242,
+        3770866.241
+      ],
+      [
+        59,
+        3.91,
+        219,
+        1890,
+        74,
+        284323315,
+        4819039.237
+      ],
+      [
+        60,
+        3.92,
+        222,
+        1920,
+        75,
+        369620309,
+        6160338.483
+      ],
+      [
+        61,
+        3.93,
+        225,
+        1950,
+        76,
+        480506402,
+        7877154.131
+      ],
+      [
+        62,
+        3.94,
+        228,
+        1980,
+        77,
+        624658323,
+        10075134.242
+      ],
+      [
+        63,
+        3.95,
+        231,
+        2010,
+        78,
+        812055820,
+        12889774.921
+      ],
+      [
+        64,
+        3.96,
+        234,
+        2040,
+        79,
+        1055672565,
+        16494883.828
+      ],
+      [
+        65,
+        3.97,
+        237,
+        2070,
+        80,
+        1372374335,
+        21113451.308
+      ],
+      [
+        66,
+        3.98,
+        240,
+        2100,
+        81,
+        1784086636,
+        27031615.697
+      ],
+      [
+        67,
+        3.99,
+        243,
+        2130,
+        82,
+        2319312626,
+        34616606.358
+      ],
+      [
+        68,
+        4,
+        246,
+        2160,
+        83,
+        3015106414,
+        44339800.206
+      ],
+      [
+        69,
+        4.01,
+        249,
+        2190,
+        84,
+        3919638338,
+        56806352.725
+      ],
+      [
+        70,
+        4.02,
+        252,
+        2220,
+        85,
+        5095529840,
+        72793283.429
+      ],
+      [
+        71,
+        4.03,
+        255,
+        2250,
+        86,
+        6624188792,
+        93298433.69
+      ],
+      [
+        72,
+        4.04,
+        258,
+        2280,
+        87,
+        8611445429,
+        119603408.736
+      ],
+      [
+        73,
+        4.05,
+        261,
+        2310,
+        88,
+        11194879058,
+        153354507.644
+      ],
+      [
+        74,
+        4.06,
+        264,
+        2340,
+        89,
+        14553342775,
+        196666794.257
+      ],
+      [
+        75,
+        4.07,
+        267,
+        2370,
+        90,
+        18919345608,
+        252257941.44
+      ],
+      [
+        76,
+        4.08,
+        270,
+        2400,
+        91,
+        24595149290,
+        323620385.395
+      ],
+      [
+        77,
+        4.09,
+        273,
+        2430,
+        92,
+        31973694077,
+        415242780.221
+      ],
+      [
+        78,
+        4.1,
+        276,
+        2460,
+        93,
+        41565802300,
+        532894901.282
+      ],
+      [
+        79,
+        4.11,
+        279,
+        2490,
+        94,
+        54035542990,
+        683994215.063
+      ],
+      [
+        80,
+        4.12,
+        282,
+        2520,
+        95,
+        70246205887,
+        878077573.587
+      ],
+      [
+        81,
+        4.13,
+        285,
+        2550,
+        96,
+        91320067654,
+        1127408242.642
+      ],
+      [
+        82,
+        4.14,
+        288,
+        2580,
+        97,
+        118716087950,
+        1447757170.122
+      ],
+      [
+        83,
+        4.15,
+        291,
+        2610,
+        98,
+        154330914335,
+        1859408606.446
+      ],
+      [
+        84,
+        4.16,
+        294,
+        2640,
+        99,
+        200630188635,
+        2388454626.607
+      ],
+      [
+        85,
+        4.17,
+        297,
+        2670,
+        100,
+        260819245225,
+        3068461708.529
+      ],
+      [
+        86,
+        4.18,
+        300,
+        2700,
+        101,
+        339065018793,
+        3942616497.593
+      ],
+      [
+        87,
+        4.19,
+        303,
+        2730,
+        102,
+        440784524431,
+        5066488786.563
+      ],
+      [
+        88,
+        4.2,
+        306,
+        2760,
+        103,
+        573019881760,
+        6511589565.455
+      ],
+      [
+        89,
+        4.21,
+        309,
+        2790,
+        104,
+        744925846288,
+        8369953329.079
+      ],
+      [
+        90,
+        4.22,
+        312,
+        2820,
+        105,
+        968403600175,
+        10760040001.944
+      ],
+      [
+        91,
+        4.23,
+        315,
+        2850,
+        106,
+        1258924680227,
+        13834337145.352
+      ],
+      [
+        92,
+        4.24,
+        318,
+        2880,
+        107,
+        1636602084295,
+        17789153090.163
+      ],
+      [
+        93,
+        4.25,
+        321,
+        2910,
+        108,
+        2127582709584,
+        22877233436.387
+      ],
+      [
+        94,
+        4.26,
+        324,
+        2940,
+        109,
+        2765857522459,
+        29424016196.372
+      ],
+      [
+        95,
+        4.27,
+        327,
+        2970,
+        110,
+        3595614779197,
+        37848576623.126
+      ],
+      [
+        96,
+        4.28,
+        330,
+        3000,
+        111,
+        4674299212956,
+        48690616801.625
+      ],
+      [
+        97,
+        4.29,
+        333,
+        3030,
+        112,
+        6076588976843,
+        62645247183.948
+      ],
+      [
+        98,
+        4.3,
+        336,
+        3060,
+        113,
+        7899565669896,
+        80607812958.122
+      ],
+      [
+        99,
+        4.31,
+        339,
+        3090,
+        114,
+        10269435370865,
+        103731670412.778
+      ],
+      [
+        100,
+        4.32,
+        342,
+        3120,
+        115,
+        13350265982125,
+        133502659821.25
+      ],
+      [
+        101,
+        4.33,
+        345,
+        3150,
+        116,
+        17355345776762,
+        171835106700.614
+      ],
+      [
+        102,
+        4.34,
+        348,
+        3180,
+        117,
+        22561949509790,
+        221195583429.314
+      ],
+      [
+        103,
+        4.35,
+        351,
+        3210,
+        118,
+        29330534362728,
+        284762469541.049
+      ],
+      [
+        104,
+        4.36,
+        354,
+        3240,
+        119,
+        38129694671546,
+        366631679534.096
+      ],
+      [
+        105,
+        4.37,
+        357,
+        3270,
+        120,
+        49568603073010,
+        472081934028.667
+      ],
+      [
+        106,
+        4.38,
+        360,
+        3300,
+        121,
+        64439183994912,
+        607916830140.679
+      ],
+      [
+        107,
+        4.39,
+        363,
+        3330,
+        122,
+        83770939193386,
+        782905973769.963
+      ],
+      [
+        108,
+        4.4,
+        366,
+        3360,
+        123,
+        108902220951402,
+        1008353897698.167
+      ],
+      [
+        109,
+        4.41,
+        369,
+        3390,
+        124,
+        141572887236823,
+        1298833827860.761
+      ],
+      [
+        110,
+        4.42,
+        372,
+        3420,
+        125,
+        184044753407869,
+        1673134121889.718
+      ],
+      [
+        111,
+        4.43,
+        375,
+        3450,
+        126,
+        239258179430230,
+        2155479093966.036
+      ],
+      [
+        112,
+        4.44,
+        378,
+        3480,
+        127,
+        311035633259299,
+        2777103868386.598
+      ],
+      [
+        113,
+        4.45,
+        381,
+        3510,
+        128,
+        404346323237089,
+        3578286046345.92
+      ],
+      [
+        114,
+        4.46,
+        384,
+        3540,
+        129,
+        525650220208216,
+        4610966843931.72
+      ],
+      [
+        115,
+        4.47,
+        387,
+        3570,
+        130,
+        683345286270681,
+        5942132924092.878
+      ],
+      [
+        116,
+        4.48,
+        390,
+        3600,
+        131,
+        888348872151885,
+        7658179932343.836
+      ],
+      [
+        117,
+        4.49,
+        393,
+        3630,
+        132,
+        1154853533797451,
+        9870543023909.838
+      ],
+      [
+        118,
+        4.5,
+        396,
+        3660,
+        133,
+        1501309593936686,
+        12722962660480.39
+      ],
+      [
+        119,
+        4.51,
+        399,
+        3690,
+        134,
+        1951702472117692,
+        16400861110232.705
+      ],
+      [
+        120,
+        4.52,
+        402,
+        3720,
+        135,
+        2537213213753000,
+        21143443447941.668
+      ],
+      [
+        121,
+        4.53,
+        405,
+        3750,
+        136,
+        3298377177878900,
+        27259315519660.332
+      ],
+      [
+        122,
+        4.54,
+        408,
+        3780,
+        137,
+        4287890331242570,
+        35146642059365.33
+      ],
+      [
+        123,
+        4.55,
+        411,
+        3810,
+        138,
+        5574257430615340,
+        45319166102563.74
+      ],
+      [
+        124,
+        4.56,
+        414,
+        3840,
+        139,
+        7246534659799944,
+        58439795643547.94
+      ],
+      [
+        125,
+        4.57,
+        417,
+        3870,
+        140,
+        9420495057739926,
+        75363960461919.4
+      ],
+      [
+        126,
+        4.58,
+        420,
+        3900,
+        141,
+        12246643575061906,
+        97195583929062.75
+      ],
+      [
+        127,
+        4.59,
+        423,
+        3930,
+        142,
+        15920636647580476,
+        125359343681736.03
+      ],
+      [
+        128,
+        4.6,
+        426,
+        3960,
+        143,
+        20696827641854620,
+        161693965951989.22
+      ],
+      [
+        129,
+        4.61,
+        429,
+        3990,
+        144,
+        26905875934411010,
+        208572681662100.84
+      ],
+      [
+        130,
+        4.62,
+        432,
+        4020,
+        145,
+        34977638714734316,
+        269058759344110.12
+      ],
+      [
+        131,
+        4.63,
+        435,
+        4050,
+        146,
+        45470930329154610,
+        347106338390493.2
+      ],
+      [
+        132,
+        4.64,
+        438,
+        4080,
+        147,
+        59112209427900990,
+        447819768393189.3
+      ],
+      [
+        133,
+        4.65,
+        441,
+        4110,
+        148,
+        76845872256271300,
+        577788513205047.4
+      ],
+      [
+        134,
+        4.66,
+        444,
+        4140,
+        149,
+        99899633933152690,
+        745519656217557.4
+      ],
+      [
+        135,
+        4.67,
+        447,
+        4170,
+        150,
+        129869524113098500,
+        961996474911840.8
+      ],
+      [
+        136,
+        4.68,
+        450,
+        4200,
+        151,
+        168830381347028060,
+        1241399862845794.5
+      ],
+      [
+        137,
+        4.69,
+        453,
+        4230,
+        152,
+        219479495751136450,
+        1602040114971799
+      ],
+      [
+        138,
+        4.7,
+        456,
+        4260,
+        153,
+        285323344476477400,
+        2067560467220850.8
+      ],
+      [
+        139,
+        4.71,
+        459,
+        4290,
+        154,
+        370920347819420600,
+        2668491710931083.5
+      ],
+      [
+        140,
+        4.72,
+        462,
+        4320,
+        155,
+        482196452165246900,
+        3444260372608906.5
+      ],
+      [
+        141,
+        4.73,
+        465,
+        4350,
+        156,
+        626855387814821000,
+        4445782892303695
+      ],
+      [
+        142,
+        4.74,
+        468,
+        4380,
+        157,
+        814912004159267300,
+        5738816930699066
+      ],
+      [
+        143,
+        4.75,
+        471,
+        4410,
+        158,
+        1059385605407047600,
+        7408290946902430
+      ],
+      [
+        144,
+        4.76,
+        474,
+        4440,
+        159,
+        1377201287029161700,
+        9563897826591400
+      ],
+      [
+        145,
+        4.77,
+        477,
+        4470,
+        160,
+        1790361673137910300,
+        12347321883709726
+      ],
+      [
+        146,
+        4.78,
+        480,
+        4500,
+        161,
+        2327470175079283700,
+        15941576541638930
+      ],
+      [
+        147,
+        4.79,
+        483,
+        4530,
+        162,
+        3025711227603069000,
+        20583069575531080
+      ],
+      [
+        148,
+        4.8,
+        486,
+        4560,
+        163,
+        3933424595883989500,
+        26577193215432360
+      ],
+      [
+        149,
+        4.81,
+        489,
+        4590,
+        164,
+        5113451974649186000,
+        34318469628518028
+      ],
+      [
+        150,
+        4.82,
+        492,
+        4620,
+        165,
+        6647487567043943000,
+        44316583780292960
+      ],
+      [
+        151,
+        4.83,
+        495,
+        4650,
+        166,
+        8641733837157125000,
+        57230025411636590
+      ],
+      [
+        152,
+        4.84,
+        498,
+        4680,
+        167,
+        11234253988304265000,
+        73909565712528060
+      ],
+      [
+        153,
+        4.85,
+        501,
+        4710,
+        168,
+        14604530184795544000,
+        95454445652258450
+      ]
+    ]
+  }
+}
