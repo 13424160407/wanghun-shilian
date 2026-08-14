@@ -1,2 +1,18 @@
 # 本地游戏源文件夹（已部署到 game/，不在仓库重复跟踪）
 WHSL/
+
+# 游戏开发文件（运行时不需要，防止误提交公开）
+game/.vscode/
+game/*.md
+game/fix-*.js
+game/check-syntax.js
+game/generate-config.js
+game/hello.py
+game/server.js
+game/serve.ps1
+game/start-server.ps1
+game/audio-test.html
+game/download-audio.html
+game/setup-audio.html
+game/_game_backup.html
+game/boss_fix.txt
