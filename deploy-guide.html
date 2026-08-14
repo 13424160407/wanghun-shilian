@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H5游戏官网部署指南</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        background: #0f0f14;
+        color: #e0e0e0;
+        line-height: 1.8;
+        padding: 40px 20px;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 32px;
+        background: linear-gradient(135deg, #ffd700, #ff8c00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        color: #888;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    h2 {
+        font-size: 22px;
+        color: #ffd700;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        border-left: 4px solid #ffd700;
+    }
+    h3 {
+        font-size: 17px;
+        color: #ff9c00;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+    ul, ol {
+        margin-left: 25px;
+        margin-bottom: 15px;
+    }
+    li {
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+    .card {
+        background: #1a1a24;
+        border: 1px solid #2a2a38;
+        border-radius: 10px;
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+    .highlight {
+        background: rgba(255, 215, 0, 0.1);
+        border: 1px solid rgba(255, 215, 0, 0.3);
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin: 15px 0;
+    }
+    .highlight strong {
+        color: #ffd700;
+    }
+    code {
+        background: #2a2a38;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-family: "Consolas", "Monaco", monospace;
+        font-size: 13px;
+        color: #7ec;
+    }
+    .code-block {
+        background: #1a1a24;
+        border: 1px solid #2a2a38;
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin: 12px 0;
+        overflow-x: auto;
+        font-family: "Consolas", "Monaco", monospace;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #a8d4a8;
+    }
+    .step-num {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        background: linear-gradient(135deg, #ffd700, #ff8c00);
+        color: #1a1a1a;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .checklist {
+        background: rgba(0, 255, 100, 0.05);
+        border: 1px solid rgba(0, 255, 100, 0.2);
+        border-radius: 8px;
+        padding: 20px;
+        margin: 15px 0;
+    }
+    .checklist li {
+        list-style: none;
+        margin-left: 0;
+    }
+    .checklist li::before {
+        content: "✅ ";
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+    }
+    th, td {
+        border: 1px solid #2a2a38;
+        padding: 10px 15px;
+        text-align: left;
+        font-size: 14px;
+    }
+    th {
+        background: #1a1a24;
+        color: #ffd700;
+    }
+    .cost {
+        color: #7ec;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <h1>H5 游戏官网部署指南</h1>
+    <p class="subtitle">《亡魂试炼》官网部署完整流程 · 从零上线到对外访问</p>
+
+    <!-- ========== 需要准备的东西 ========== -->
+    <h2>一、你需要准备什么？</h2>
+
+    <div class="card">
+        <table>
+            <tr>
+                <th>项目</th>
+                <th>说明</th>
+                <th>大致费用</th>
+                <th>获取方式</th>
+            </tr>
+            <tr>
+                <td><strong>域名</strong></td>
+                <td>如 wanghunshilian.com，用户通过域名访问你的官网</td>
+                <td class="cost">50-100元/年</td>
+                <td>阿里云/腾讯云/Namesilo 购买</td>
+            </tr>
+            <tr>
+                <td><strong>云服务器</strong></td>
+                <td>一台有公网 IP 的服务器，用于存放网站文件</td>
+                <td class="cost">50-200元/月</td>
+                <td>阿里云ECS / 腾讯云CVM / 华为云</td>
+            </tr>
+            <tr>
+                <td><strong>ICP备案</strong></td>
+                <td>国内服务器必须完成备案，否则域名无法解析访问</td>
+                <td class="cost">免费（需7-20天）</td>
+                <td>通过云服务商提交备案申请</td>
+            </tr>
+            <tr>
+                <td><strong>SSL证书</strong></td>
+                <td>让网站支持 HTTPS，浏览器不再提示"不安全"</td>
+                <td class="cost">免费</td>
+                <td>云服务商免费申请 / Let's Encrypt</td>
+            </tr>
+            <tr>
+                <td><strong>网站文件</strong></td>
+                <td>index.html + 背景图（已生成好）</td>
+                <td class="cost">✅ 已就绪</td>
+                <td>就是当前项目目录里的文件</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="highlight">
+        <strong>💡 H5 游戏的特殊优势：</strong>H5 游戏不需要上架 App Store 或应用商店，玩家直接通过浏览器打开就能玩。
+        所以你只需要把官网 + 游戏本身都放到服务器上，用户访问域名即可开始游戏，部署比原生 App 简单很多。
+    </div>
+
+    <!-- ========== 部署流程 ========== -->
+    <h2>二、完整部署流程（6步）</h2>
+
+    <div class="card">
+        <h3><span class="step-num">1</span>购买域名</h3>
+        <ul>
+            <li>到 <strong>阿里云</strong>、<strong>腾讯云</strong> 或 <strong>Namesilo</strong> 搜索并购买域名</li>
+            <li>建议选 <code>.com</code> 或 <code>.cn</code> 后缀</li>
+            <li>比如：<code>wanghunshilian.com</code></li>
+            <li>购买后记得完成<strong>实名认证</strong>（身份证拍照即可）</li>
+        </ul>
+
+        <h3><span class="step-num">2</span>购买云服务器</h3>
+        <ul>
+            <li>推荐 <strong>阿里云 ECS 轻量应用服务器</strong>（新人优惠便宜）</li>
+            <li>配置建议：1核2G 即可（官网是纯静态页面，资源消耗极小）</li>
+            <li>操作系统选 <strong>Ubuntu 22.04</strong> 或 <strong>CentOS 7.9</strong></li>
+            <li>记下服务器的<strong>公网 IP 地址</strong></li>
+            <li>安全组开放 <strong>80端口</strong>（HTTP）和 <strong>443端口</strong>（HTTPS）</li>
+        </ul>
+
+        <h3><span class="step-num">3</span>ICP 备案（国内服务器必须）</h3>
+        <ul>
+            <li>在云服务商控制台找到「备案」入口</li>
+            <li>准备材料：身份证、域名证书、服务器实例</li>
+            <li>填写网站信息：网站名「亡魂试炼」、类型「游戏娱乐」</li>
+            <li>提交后管局审核，通常 <strong>7-20 个工作日</strong></li>
+            <li>审核通过后会获得一个<strong>备案号</strong>（填到网页底部）</li>
+        </ul>
+        <div class="highlight">
+            <strong>⚠️ 注意：</strong>如果不想等备案，可以买<strong>香港/海外服务器</strong>，
+            不需要备案即可通过域名访问，但国内访问速度会稍慢。
+        </div>
+
+        <h3><span class="step-num">4</span>域名解析（DNS 配置）</h3>
+        <p>备案通过后，在域名管理面板添加 DNS 解析记录：</p>
+        <div class="code-block">
+记录类型：A
+主机记录：@
+记录值：你的服务器公网IP（如 47.100.xx.xx）
+TTL：600
+
+记录类型：A
+主机记录：www
+记录值：你的服务器公网IP
+TTL：600
+        </div>
+        <p>配置后等待 5-10 分钟生效，用 <code>ping 你的域名</code> 测试是否解析成功。</p>
+
+        <h3><span class="step-num">5</span>服务器上安装 Nginx 并上传文件</h3>
+        <p>SSH 连接到服务器后执行：</p>
+        <div class="code-block">
+# 安装 Nginx
+sudo apt update && sudo apt install nginx -y
+
+# 创建网站目录
+sudo mkdir -p /var/www/wanghunshilian
+
+# 上传文件（在本地电脑执行）
+scp index.html Epic_fantasy_game_official_web_*.png root@你的IP:/var/www/wanghunshilian/
+
+# 或者用 FTP 工具（如 FileZilla）上传更方便
+        </div>
+
+        <h3><span class="step-num">6</span>配置 Nginx 并启动</h3>
+        <p>创建 Nginx 配置文件：</p>
+        <div class="code-block">
+sudo nano /etc/nginx/conf.d/wanghunshilian.conf
+        </div>
+        <p>写入以下配置：</p>
+        <div class="code-block">
+server {
+    listen 80;
+    server_name wanghunshilian.com www.wanghunshilian.com;
+    root /var/www/wanghunshilian;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # 游戏H5页面路由（如果游戏也在同一服务器）
+    location /game/ {
+        alias /var/www/wanghunshilian/game/;
+        try_files $uri $uri/ /game/index.html;
+    }
+}
+        </div>
+        <p>启动 Nginx：</p>
+        <div class="code-block">
+sudo nginx -t          # 检查配置语法
+sudo systemctl restart nginx   # 重启生效
+sudo systemctl enable nginx    # 设置开机自启
+        </div>
+        <p>此时访问 <code>http://你的域名</code> 就能看到官网了！🎉</p>
+    </div>
+
+    <!-- ========== HTTPS ========== -->
+    <h2>三、配置 HTTPS（强烈建议）</h2>
+    <div class="card">
+        <p>没有 HTTPS，浏览器会提示「不安全」，影响用户信任。配置方法：</p>
+        <div class="code-block">
+# 安装 Certbot（Let's Encrypt 免费证书）
+sudo apt install certbot python3-certbot-nginx -y
+
+# 自动配置 HTTPS
+sudo certbot --nginx -d wanghunshilian.com -d www.wanghunshilian.com
+
+# 按提示操作即可，证书自动续期
+        </div>
+        <p>完成后访问 <code>https://你的域名</code> 就会显示安全锁标 🔒</p>
+    </div>
+
+    <!-- ========== 游戏联调 ========== -->
+    <h2>四、把 H5 游戏接入官网</h2>
+    <div class="card">
+        <p>你的官网已经有「立即开始游戏」按钮，只需要把按钮链接指向游戏地址即可：</p>
+        <div class="code-block">
+# 在 index.html 中修改按钮链接
+&lt;a href="/game/index.html" class="btn-download"&gt;
+    立即开始游戏
+&lt;/a&gt;
+
+# 如果游戏部署在其他服务器，用完整地址
+&lt;a href="https://play.wanghunshilian.com" class="btn-download"&gt;
+    立即开始游戏
+&lt;/a&gt;
+        </div>
+        <p>把你 H5 游戏的打包文件（通常是 <code>index.html</code> + <code>build/</code> 或 <code>assets/</code> 目录）上传到服务器的 <code>/var/www/wanghunshilian/game/</code> 目录即可。</p>
+    </div>
+
+    <!-- ========== 清单 ========== -->
+    <h2>五、上线前检查清单</h2>
+    <div class="checklist">
+        <ul>
+            <li>域名已购买并完成实名认证</li>
+            <li>服务器已购买，安全组开放 80/443 端口</li>
+            <li>ICP 备案已通过（国内服务器）或使用海外服务器</li>
+            <li>DNS 解析已配置，ping 域名能通</li>
+            <li>网站文件已上传到服务器</li>
+            <li>Nginx 已配置并启动</li>
+            <li>HTTPS 证书已配置</li>
+            <li>底部备案号已填写真实备案号</li>
+            <li>「立即开始游戏」按钮链接指向游戏地址</li>
+            <li>手机端访问体验正常（响应式布局已做好）</li>
+        </ul>
+    </div>
+
+    <!-- ========== 费用汇总 ========== -->
+    <h2>六、费用汇总</h2>
+    <div class="card">
+        <table>
+            <tr>
+                <th>项目</th>
+                <th>费用</th>
+                <th>备注</th>
+            </tr>
+            <tr>
+                <td>域名</td>
+                <td class="cost">约 60元/年</td>
+                <td>.com 域名</td>
+            </tr>
+            <tr>
+                <td>云服务器</td>
+                <td class="cost">约 600-2400元/年</td>
+                <td>1核2G 轻量服务器，新人有折扣</td>
+            </tr>
+            <tr>
+                <td>ICP备案</td>
+                <td class="cost">免费</td>
+                <td>只需等待审核时间</td>
+            </tr>
+            <tr>
+                <td>SSL证书</td>
+                <td class="cost">免费</td>
+                <td>Let's Encrypt 自动续期</td>
+            </tr>
+            <tr>
+                <td><strong>合计</strong></td>
+                <td class="cost"><strong>约 660-2460元/年</strong></td>
+                <td>最低成本跑起来</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="highlight">
+        <strong>📝 总结：</strong>H5 游戏官网部署其实很简单——买域名 + 买服务器 + 备案 + 上传文件 + 配置 Nginx，
+        五步搞定。因为官网是纯静态页面（HTML+图片），不需要数据库和后端，一台最低配服务器就绰绰有余。
+        如果有需要，我可以帮你生成 Nginx 配置文件或部署脚本。
+    </div>
+
+</div>
+</body>
+</html>

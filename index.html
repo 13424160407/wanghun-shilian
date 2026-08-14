@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《亡魂试炼》- 暗黑奇幻H5游戏 - 官方网站</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        color: #fff;
+    }
+
+    /* ========== 背景层 ========== */
+    .bg-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Epic_fantasy_game_official_web_2026-08-13T12-18-11.png') center center / cover no-repeat;
+        z-index: 1;
+    }
+
+    .bg-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:
+            radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.85) 100%),
+            linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.5) 80%, rgba(0,0,0,0.9) 100%);
+        z-index: 2;
+    }
+
+    /* 漂浮光点 */
+    .particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .particle {
+        position: absolute;
+        background: radial-gradient(circle, rgba(255, 215, 100, 0.9) 0%, rgba(255, 215, 100, 0) 70%);
+        border-radius: 50%;
+        animation: float-up linear infinite;
+    }
+
+    @keyframes float-up {
+        0% {
+            transform: translateY(100vh) translateX(0);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-10vh) translateX(50px);
+            opacity: 0;
+        }
+    }
+
+    /* ========== 内容层 ========== */
+    .content {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ========== 顶部导航 ========== */
+    .top-nav {
+        height: 70px;
+        padding: 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    }
+
+    .logo-mini {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-shadow: 0 0 20px rgba(255, 200, 100, 0.8);
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    .nav-item {
+        color: #e8e8e8;
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 2px;
+        position: relative;
+        padding: 5px 0;
+        transition: all 0.3s;
+    }
+
+    .nav-item:hover {
+        color: #ffd700;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    }
+
+    .nav-item.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    }
+
+    /* ========== 主展示区 ========== */
+    .main-stage {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 80px;
+        gap: 80px;
+    }
+
+    .left-content {
+        flex: 1;
+        max-width: 700px;
+    }
+
+    .game-tag {
+        display: inline-block;
+        padding: 6px 20px;
+        background: linear-gradient(90deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.05));
+        border: 1px solid rgba(255, 215, 0, 0.4);
+        border-radius: 20px;
+        font-size: 12px;
+        letter-spacing: 4px;
+        color: #ffd700;
+        margin-bottom: 25px;
+    }
+
+    .game-title {
+        font-size: 110px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 8px;
+        background: linear-gradient(180deg, #fff5d4 0%, #ffd700 50%, #b8860b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 0 80px rgba(255, 215, 0, 0.4);
+        filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.8));
+        margin-bottom: 20px;
+    }
+
+    .game-subtitle {
+        font-size: 22px;
+        letter-spacing: 12px;
+        color: #d4d4d4;
+        margin-bottom: 35px;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .game-desc {
+        font-size: 15px;
+        line-height: 2;
+        color: #b8b8b8;
+        letter-spacing: 2px;
+        margin-bottom: 45px;
+        max-width: 560px;
+    }
+
+    /* 下载按钮区 */
+    .download-area {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .btn-download {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 18px 45px;
+        background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+        border: none;
+        border-radius: 8px;
+        color: #1a1a1a;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        cursor: pointer;
+        box-shadow:
+            0 0 30px rgba(255, 215, 0, 0.5),
+            inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-download::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+        transition: left 0.6s;
+    }
+
+    .btn-download:hover::before {
+        left: 100%;
+    }
+
+    .btn-download:hover {
+        transform: translateY(-3px);
+        box-shadow:
+            0 10px 40px rgba(255, 215, 0, 0.7),
+            inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+
+    .btn-icon {
+        font-size: 28px;
+    }
+
+    .btn-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.2;
+    }
+
+    .btn-info small {
+        font-size: 11px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        opacity: 0.8;
+    }
+
+    /* 右侧二维码区 */
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .qr-card {
+        background: rgba(20, 15, 10, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 215, 0, 0.3);
+        border-radius: 12px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .qr-code {
+        width: 180px;
+        height: 180px;
+        background: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* 用 CSS 模拟二维码图案 */
+    .qr-pattern {
+        width: 100%;
+        height: 100%;
+        background:
+            repeating-linear-gradient(0deg, #000 0px, #000 4px, #fff 4px, #fff 8px),
+            repeating-linear-gradient(90deg, #000 0px, #000 4px, transparent 4px, transparent 8px);
+        background-blend-mode: multiply;
+        position: relative;
+    }
+
+    .qr-pattern::before,
+    .qr-pattern::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 4px solid #000;
+        background: #fff;
+    }
+
+    .qr-pattern::before {
+        top: 10px;
+        left: 10px;
+    }
+
+    .qr-pattern::after {
+        top: 10px;
+        right: 10px;
+    }
+
+    .qr-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, #ffd700, #b8860b);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        z-index: 2;
+    }
+
+    .qr-text {
+        font-size: 13px;
+        letter-spacing: 3px;
+        color: #ffd700;
+        margin-bottom: 4px;
+    }
+
+    .qr-subtext {
+        font-size: 11px;
+        color: #888;
+        letter-spacing: 1px;
+    }
+
+    .data-stats {
+        display: flex;
+        gap: 30px;
+        margin-top: 10px;
+    }
+
+    .stat-item {
+        text-align: center;
+    }
+
+    .stat-num {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+        letter-spacing: 1px;
+    }
+
+    .stat-label {
+        font-size: 11px;
+        color: #999;
+        letter-spacing: 2px;
+        margin-top: 5px;
+    }
+
+    /* ========== 底部 ========== */
+    .footer {
+        height: 60px;
+        padding: 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+        font-size: 12px;
+        color: #777;
+        letter-spacing: 1px;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 25px;
+    }
+
+    .footer-links a {
+        color: #777;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #ffd700;
+    }
+
+    /* ========== 装饰元素 ========== */
+    .deco-corner {
+        position: fixed;
+        width: 120px;
+        height: 120px;
+        border: 2px solid rgba(255, 215, 0, 0.3);
+        z-index: 5;
+        pointer-events: none;
+    }
+
+    .deco-corner.tl {
+        top: 90px;
+        left: 40px;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .deco-corner.tr {
+        top: 90px;
+        right: 40px;
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .deco-corner.bl {
+        bottom: 80px;
+        left: 40px;
+        border-right: none;
+        border-top: none;
+    }
+
+    .deco-corner.br {
+        bottom: 80px;
+        right: 40px;
+        border-left: none;
+        border-top: none;
+    }
+
+    /* 响应式 */
+    @media (max-width: 1200px) {
+        .game-title { font-size: 80px; }
+        .main-stage { padding: 0 40px; gap: 50px; }
+    }
+
+    @media (max-width: 900px) {
+        .main-stage {
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            padding-top: 40px;
+        }
+        .game-title { font-size: 60px; letter-spacing: 4px; }
+        .game-subtitle { font-size: 16px; letter-spacing: 6px; }
+        .right-content { order: -1; }
+        .top-nav { padding: 0 20px; }
+        .nav-menu { display: none; }
+        .deco-corner { display: none; }
+    }
+</style>
+</head>
+<body>
+
+<!-- 背景层 -->
+<div class="bg-layer"></div>
+<div class="bg-overlay"></div>
+
+<!-- 装饰角 -->
+<div class="deco-corner tl"></div>
+<div class="deco-corner tr"></div>
+<div class="deco-corner bl"></div>
+<div class="deco-corner br"></div>
+
+<!-- 漂浮粒子 -->
+<div class="particles" id="particles"></div>
+
+<!-- 内容 -->
+<div class="content">
+
+    <!-- 顶部导航 -->
+    <header class="top-nav">
+        <div class="logo-mini">
+            <div class="logo-icon"></div>
+            <span>亡魂试炼</span>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-item active">官网首页</a>
+            <a href="#" class="nav-item">新闻公告</a>
+            <a href="#" class="nav-item">游戏攻略</a>
+            <a href="#" class="nav-item">玩家社区</a>
+            <a href="#" class="nav-item">充值中心</a>
+            <a href="#" class="nav-item">客户服务</a>
+        </nav>
+    </header>
+
+    <!-- 主展示区 -->
+    <main class="main-stage">
+
+        <!-- 左侧文字+下载 -->
+        <div class="left-content">
+            <div class="game-tag">2024 年度暗黑巨作</div>
+            <h1 class="game-title">亡魂试炼</h1>
+            <div class="game-subtitle">S O U L &nbsp; T R I A L</div>
+            <p class="game-desc">
+                百鬼夜行，亡魂不散，试炼之地大门已开。<br>
+                集结英灵伙伴，闯入幽冥深渊的生死迷局。<br>
+                无需下载，浏览器即开即玩，即刻踏上你的试炼之旅！
+            </p>
+
+            <div class="download-area">
+                <a href="#" class="btn-download" onclick="alert('即将进入游戏...'); return false;">
+                    <span class="btn-icon">▶</span>
+                    <div class="btn-info">
+                        <small>H5 即开即玩</small>
+                        <span>立即开始游戏</span>
+                    </div>
+                </a>
+
+                <a href="#" class="btn-download" onclick="alert('即将打开充值页面...'); return false;">
+                    <span class="btn-icon">◆</span>
+                    <div class="btn-info">
+                        <small>游戏充值</small>
+                        <span>充值中心</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 右侧二维码 -->
+        <div class="right-content">
+            <div class="qr-card">
+                <div class="qr-code">
+                    <div class="qr-pattern"></div>
+                    <div class="qr-logo"></div>
+                </div>
+                <div class="qr-text">扫码进入游戏</div>
+                <div class="qr-subtext">手机扫码 即开即玩</div>
+            </div>
+
+            <div class="data-stats">
+                <div class="stat-item">
+                    <div class="stat-num">5000万+</div>
+                    <div class="stat-label">玩家注册</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">4.9★</div>
+                    <div class="stat-label">玩家评分</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div>© 2024 亡魂试炼 官方运营团队 版权所有 | 沪ICP备XXXXXXXX号-1</div>
+        <div class="footer-links">
+            <a href="#">用户协议</a>
+            <a href="#">隐私政策</a>
+            <a href="#">家长监护</a>
+            <a href="#">联系我们</a>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+    // 生成飘浮粒子
+    const particlesContainer = document.getElementById('particles');
+    const particleCount = 30;
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+
+        const size = Math.random() * 6 + 2;
+        const left = Math.random() * 100;
+        const duration = Math.random() * 15 + 10;
+        const delay = Math.random() * 10;
+        const opacity = Math.random() * 0.6 + 0.3;
+
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        particle.style.left = left + '%';
+        particle.style.animationDuration = duration + 's';
+        particle.style.animationDelay = delay + 's';
+        particle.style.opacity = opacity;
+
+        particlesContainer.appendChild(particle);
+    }
+</script>
+
+</body>
+</html>
