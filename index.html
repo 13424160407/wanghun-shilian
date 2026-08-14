@@ -444,18 +444,56 @@
     }
 
     @media (max-width: 900px) {
+        /* 移动端允许纵向滚动，避免内容被裁掉 */
+        html, body { overflow-x: hidden; overflow-y: auto; }
+        .content { height: auto; min-height: 100vh; }
         .main-stage {
             flex-direction: column;
-            justify-content: center;
-            gap: 30px;
-            padding-top: 40px;
+            justify-content: flex-start;
+            gap: 20px;
+            padding: 30px 20px;
         }
-        .game-title { font-size: 60px; letter-spacing: 4px; }
-        .game-subtitle { font-size: 16px; letter-spacing: 6px; }
+        .game-title { font-size: 56px; letter-spacing: 4px; margin-bottom: 14px; }
+        .game-subtitle { font-size: 15px; letter-spacing: 5px; margin-bottom: 20px; }
+        .game-desc { font-size: 14px; margin-bottom: 28px; max-width: 100%; }
+        .game-tag { margin-bottom: 16px; }
         .right-content { order: -1; }
+        .left-content {
+            max-width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* 按钮纵向堆叠，防止横向溢出被裁 */
+        .download-area { flex-direction: column; align-items: center; }
         .top-nav { padding: 0 20px; }
         .nav-menu { display: none; }
         .deco-corner { display: none; }
+    }
+
+    @media (max-width: 480px) {
+        .top-nav { height: 56px; }
+        .logo-mini { font-size: 16px; letter-spacing: 2px; }
+        .game-title { font-size: 44px; letter-spacing: 2px; }
+        .game-subtitle { font-size: 13px; letter-spacing: 4px; }
+        .game-desc { font-size: 12px; line-height: 1.8; margin-bottom: 22px; }
+        .game-tag { font-size: 11px; letter-spacing: 2px; padding: 5px 14px; }
+        .btn-download { padding: 14px 34px; gap: 12px; }
+        .btn-download:hover, .btn-tapxz:hover { transform: none; }
+        .qr-card { padding: 18px; }
+        .qr-code { width: 150px; height: 150px; }
+        .stat-num { font-size: 22px; }
+        .stat-label { font-size: 10px; }
+        .data-stats { gap: 24px; }
+        .footer {
+            height: auto;
+            padding: 16px 20px;
+            flex-direction: column;
+            gap: 8px;
+            text-align: center;
+        }
+        .footer-links { flex-wrap: wrap; justify-content: center; gap: 12px; }
     }
 </style>
 </head>
