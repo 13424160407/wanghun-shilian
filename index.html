@@ -255,6 +255,28 @@
             inset 0 1px 0 rgba(255, 255, 255, 0.4);
     }
 
+    .btn-tapxz {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow:
+            0 0 30px rgba(255, 215, 0, 0.5),
+            inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        transition: all 0.3s;
+    }
+
+    .btn-tapxz img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn-tapxz:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 40px rgba(255, 215, 0, 0.7);
+    }
+
     .btn-icon {
         font-size: 28px;
     }
@@ -530,12 +552,8 @@
                     </div>
                 </a>
 
-                <a href="#" class="btn-download" onclick="alert('即将打开充值页面...'); return false;">
-                    <span class="btn-icon">◆</span>
-                    <div class="btn-info">
-                        <small>游戏充值</small>
-                        <span>充值中心</span>
-                    </div>
+                <a href="https://tap.cn/6Jj0H0yK" class="btn-tapxz" target="_blank" rel="noopener noreferrer">
+                    <img src="UI/tapxz.png" alt="下载TapTap应用">
                 </a>
             </div>
         </div>
