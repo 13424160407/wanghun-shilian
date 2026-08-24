@@ -143,7 +143,7 @@
 <body>
 <div class="container">
 
-    <h1>H5 游戏官网部署指南</h1>
+    <h1>《亡魂试炼》官网部署指南</h1>
     <p class="subtitle">《亡魂试炼》官网部署完整流程 · 从零上线到对外访问</p>
 
     <!-- ========== 需要准备的东西 ========== -->
@@ -191,8 +191,8 @@
     </div>
 
     <div class="highlight">
-        <strong>💡 H5 游戏的特殊优势：</strong>H5 游戏不需要上架 App Store 或应用商店，玩家直接通过浏览器打开就能玩。
-        所以你只需要把官网 + 游戏本身都放到服务器上，用户访问域名即可开始游戏，部署比原生 App 简单很多。
+        <strong>📦 官网当前形态：</strong>官网是纯静态推广页（HTML + 图片），只提供 TapTap 下载入口。
+        游戏本身不在网站上（H5 源码已从网站移除，避免被抓取），部署只需上传静态文件，无需后端和数据库。
     </div>
 
     <!-- ========== 部署流程 ========== -->
@@ -275,12 +275,6 @@ server {
     location / {
         try_files $uri $uri/ =404;
     }
-
-    # 游戏H5页面路由（如果游戏也在同一服务器）
-    location /game/ {
-        alias /var/www/wanghunshilian/game/;
-        try_files $uri $uri/ /game/index.html;
-    }
 }
         </div>
         <p>启动 Nginx：</p>
@@ -308,22 +302,15 @@ sudo certbot --nginx -d wanghunshilian.com -d www.wanghunshilian.com
         <p>完成后访问 <code>https://你的域名</code> 就会显示安全锁标 🔒</p>
     </div>
 
-    <!-- ========== 游戏联调 ========== -->
-    <h2>四、把 H5 游戏接入官网</h2>
+    <!-- ========== 下载入口说明 ========== -->
+    <h2>四、官网下载入口说明</h2>
     <div class="card">
-        <p>你的官网已经有「立即开始游戏」按钮，只需要把按钮链接指向游戏地址即可：</p>
-        <div class="code-block">
-# 在 index.html 中修改按钮链接
-&lt;a href="/game/index.html" class="btn-download"&gt;
-    立即开始游戏
-&lt;/a&gt;
-
-# 如果游戏部署在其他服务器，用完整地址
-&lt;a href="https://play.wanghunshilian.com" class="btn-download"&gt;
-    立即开始游戏
-&lt;/a&gt;
-        </div>
-        <p>把你 H5 游戏的打包文件（通常是 <code>index.html</code> + <code>build/</code> 或 <code>assets/</code> 目录）上传到服务器的 <code>/var/www/wanghunshilian/game/</code> 目录即可。</p>
+        <p>官网首页不内嵌可玩游戏，只保留 TapTap 下载入口（下载按钮 + 扫码二维码），玩家通过 TapTap 下载安装游戏：</p>
+        <ul>
+            <li>下载按钮 <code>UI/tapxz.png</code> 链接到 TapTap 页面 <code>https://tap.cn/6Jj0H0yK</code></li>
+            <li>右侧二维码 <code>UI/tapewm.png</code> 供手机扫码下载</li>
+            <li>如需更换链接，直接修改 <code>index.html</code> 中 <code>.btn-tapxz</code> 的 href，并替换 <code>UI/</code> 目录下的按钮/二维码图片即可</li>
+        </ul>
     </div>
 
     <!-- ========== 清单 ========== -->
@@ -338,7 +325,7 @@ sudo certbot --nginx -d wanghunshilian.com -d www.wanghunshilian.com
             <li>Nginx 已配置并启动</li>
             <li>HTTPS 证书已配置</li>
             <li>底部备案号已填写真实备案号</li>
-            <li>「立即开始游戏」按钮链接指向游戏地址</li>
+            <li>TapTap 下载按钮链接和二维码图片正确</li>
             <li>手机端访问体验正常（响应式布局已做好）</li>
         </ul>
     </div>

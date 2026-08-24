@@ -211,53 +211,6 @@
         align-items: center;
     }
 
-    .btn-download {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        width: 300px;
-        height: 62px;
-        padding: 10px 40px;
-        background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
-        border: none;
-        border-radius: 8px;
-        color: #1a1a1a;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        cursor: pointer;
-        box-shadow:
-            0 0 30px rgba(255, 215, 0, 0.5),
-            inset 0 1px 0 rgba(255, 255, 255, 0.4);
-        transition: all 0.3s;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .btn-download::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-        transition: left 0.6s;
-    }
-
-    .btn-download:hover::before {
-        left: 100%;
-    }
-
-    .btn-download:hover {
-        transform: translateY(-3px);
-        box-shadow:
-            0 10px 40px rgba(255, 215, 0, 0.7),
-            inset 0 1px 0 rgba(255, 255, 255, 0.4);
-    }
-
     .btn-tapxz {
         display: flex;
         align-items: center;
@@ -282,24 +235,6 @@
     .btn-tapxz:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 40px rgba(255, 215, 0, 0.7);
-    }
-
-    .btn-icon {
-        font-size: 28px;
-    }
-
-    .btn-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        line-height: 1.2;
-    }
-
-    .btn-info small {
-        font-size: 11px;
-        font-weight: normal;
-        letter-spacing: 1px;
-        opacity: 0.8;
     }
 
     /* 右侧二维码区 */
@@ -474,8 +409,6 @@
         }
         /* 按钮纵向堆叠，防止横向溢出被裁 */
         .download-area { flex-direction: column; align-items: center; }
-        /* tapxz 移到「立即开始游戏」上方 */
-        .btn-tapxz { order: -1; }
         .top-nav { padding: 0 20px; }
         .nav-menu { display: none; }
         .deco-corner { display: none; }
@@ -488,8 +421,7 @@
         .game-subtitle { font-size: 13px; letter-spacing: 4px; }
         .game-desc { font-size: 12px; line-height: 1.8; margin-bottom: 22px; }
         .game-tag { font-size: 11px; letter-spacing: 2px; padding: 5px 14px; }
-        .btn-download { padding: 14px 34px; gap: 12px; }
-        .btn-download:hover, .btn-tapxz:hover { transform: none; }
+        .btn-tapxz:hover { transform: none; }
         .qr-card { padding: 18px; }
         .qr-code { width: 150px; height: 150px; }
         .stat-num { font-size: 22px; }
@@ -551,18 +483,10 @@
             <p class="game-desc">
                 百鬼夜行，亡魂不散，试炼之地大门已开。<br>
                 集结英灵伙伴，闯入幽冥深渊的生死迷局。<br>
-                无需下载，浏览器即开即玩，即刻踏上你的试炼之旅！
+                前往 TapTap 下载游戏，即刻踏上你的试炼之旅！
             </p>
 
             <div class="download-area">
-                <a href="game/index.html" class="btn-download">
-                    <span class="btn-icon">▶</span>
-                    <div class="btn-info">
-                        <small>H5 即开即玩</small>
-                        <span>立即开始游戏</span>
-                    </div>
-                </a>
-
                 <a href="https://tap.cn/6Jj0H0yK" class="btn-tapxz" target="_blank" rel="noopener noreferrer">
                     <img src="UI/tapxz.png" alt="下载TapTap应用">
                 </a>
