@@ -108,11 +108,9 @@
     }
 
     .logo-icon {
-        width: 40px;
         height: 40px;
-        background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%);
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        width: auto;
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
     }
 
     .nav-menu {
@@ -386,6 +384,8 @@
     }
 
     @media (max-width: 900px) {
+        /* 移动端使用竖版背景图 */
+        .bg-layer { background: url('sjd01.png') center center / cover no-repeat; }
         /* 移动端允许纵向滚动，避免内容被裁掉 */
         html, body { overflow-x: hidden; overflow-y: auto; }
         .content { height: auto; min-height: 100vh; }
@@ -393,7 +393,7 @@
             flex-direction: column;
             justify-content: flex-start;
             gap: 20px;
-            padding: 30px 20px;
+            padding: 5px 20px;
         }
         .game-title { font-size: 56px; letter-spacing: 4px; margin-bottom: 14px; }
         .game-subtitle { font-size: 15px; letter-spacing: 5px; margin-bottom: 20px; }
@@ -459,7 +459,7 @@
     <!-- 顶部导航 -->
     <header class="top-nav">
         <div class="logo-mini">
-            <div class="logo-icon"></div>
+            <img class="logo-icon" src="UI/logo02.png" alt="亡魂试炼">
             <span>亡魂试炼</span>
         </div>
         <nav class="nav-menu">
@@ -477,7 +477,7 @@
 
         <!-- 左侧文字+下载 -->
         <div class="left-content">
-            <div class="game-tag">2024 年度暗黑巨作</div>
+            <div class="game-tag">下载TapTap试玩亡魂试炼</div>
             <h1 class="game-title">亡魂试炼</h1>
             <div class="game-subtitle">S O U L &nbsp; T R I A L</div>
             <p class="game-desc">
@@ -485,23 +485,6 @@
                 集结英灵伙伴，闯入幽冥深渊的生死迷局。<br>
                 前往 TapTap 下载游戏，即刻踏上你的试炼之旅！
             </p>
-
-            <div class="download-area">
-                <a href="https://tap.cn/6Jj0H0yK" class="btn-tapxz" target="_blank" rel="noopener noreferrer">
-                    <img src="UI/tapxz.png" alt="下载TapTap应用">
-                </a>
-            </div>
-        </div>
-
-        <!-- 右侧二维码 -->
-        <div class="right-content">
-            <div class="qr-card">
-                <div class="qr-code">
-                    <img src="UI/tapewm.png" alt="TapTap下载二维码">
-                </div>
-                <div class="qr-text">扫码下载TapTap</div>
-                <div class="qr-subtext">手机扫码 下载TapTap</div>
-            </div>
 
             <div class="data-stats">
                 <div class="stat-item">
@@ -512,6 +495,23 @@
                     <div class="stat-num">4.9★</div>
                     <div class="stat-label">玩家评分</div>
                 </div>
+            </div>
+        </div>
+
+        <!-- 右侧二维码+下载 -->
+        <div class="right-content">
+            <div class="qr-card">
+                <div class="qr-code">
+                    <img src="UI/tapewm.png" alt="TapTap下载二维码">
+                </div>
+                <div class="qr-text">扫码下载TapTap</div>
+                <div class="qr-subtext">手机扫码 下载TapTap</div>
+            </div>
+
+            <div class="download-area">
+                <a href="https://tap.cn/6Jj0H0yK" class="btn-tapxz" target="_blank" rel="noopener noreferrer">
+                    <img src="UI/tapxz.png" alt="下载TapTap应用">
+                </a>
             </div>
         </div>
 
